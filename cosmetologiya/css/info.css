@@ -1,0 +1,31 @@
+.info {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.info-title {
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 40px;
+    padding-top: 100px;
+}
+
+.info__link {
+    border-bottom: 1px solid var(--gray);
+    transition: color .3s, border-color .3s;
+    width: fit-content;
+}
+
+.info__link:nth-last-of-type(1) {
+    display: block;
+}
+
+.info__link:hover {
+    color: var(--orange);
+    border-color: var(--orange)
+}
+
+.info__link:first-child {
+    margin-bottom: 20px;
+}

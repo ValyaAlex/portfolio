@@ -1,0 +1,46 @@
+.problems__text {
+    margin-bottom: 20px;
+}
+
+.problems__list {
+    display: flex;
+    gap: 20px;
+}
+
+.list__item {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.item-left {
+    width: 49%;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.item__icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 40px;
+}
+
+.icon__img {
+    width: 80px;
+    height: 80px;
+}
+
+.item__text {
+    text-align: center;
+    user-select: none;
+}

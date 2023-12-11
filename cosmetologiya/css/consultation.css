@@ -1,0 +1,104 @@
+.consultation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.consultation__stage {
+    padding-left: 6.3em;
+    position: relative;
+    filter: grayscale(0);
+    color: #E2E7EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+}
+
+.consultation__stage:not(:last-of-type)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 46px;
+    left: 51.9%;
+    bottom: 0;
+    width: 1px;
+    background: #E2E7EC;
+}
+
+.stage-order {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 26px;
+    line-height: 48px;
+    letter-spacing: .02em;
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.stage-progress {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    width: 2px;
+    height: 0;
+    background: var(--orange);
+    transition: height 3.5s;
+}
+
+.consultation__stage:last-of-type .stage-progress {
+    display: none;
+}
+
+.element-animation {
+    border: 2px solid #E1E4E7;
+    background: transparent;
+    color: #E1E4E7;
+}
+
+.element-animation.element-show {
+    border: 2px solid var(--orange);
+    background: var(--orange);
+    color: var(--white);
+    transition: all 1s;
+}
+
+.element-animation.element-show .stage-progress {
+    height: 180px;
+}
+
+.stage__text.element-animation {
+    color: #E1E4E7;
+}
+
+.stage__text.element-animation.element-animation.element-show {
+    color: var(--gray);
+    transition: all 1s;
+    background: none;
+    border: none;
+}
+
+.stage__text {
+    position: absolute;
+    max-width: 30%;
+}
+
+.stage__text-right {
+    right: 12%;
+}
+
+.stage__text-left {
+    left: 20%;
+}
+
+.consultation__stages {
+    margin-bottom: 40px;
+}
+
+.consultation__text {
+    margin-bottom: 40px;
+}

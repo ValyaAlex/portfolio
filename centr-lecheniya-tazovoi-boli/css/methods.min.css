@@ -1,0 +1,117 @@
+.methods,
+.methods__page-title {
+    background-color: var(--bg-blue)
+}
+
+.methods__app:hover,
+.methods__doc:hover {
+    color: var(--orange)
+}
+
+.methods__app::after,
+.page__btn:hover {
+    background-color: var(--hover-orange)
+}
+
+.methods {
+    padding-top: 100px;
+    background-image: url(../img/methods.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-bottom: 150px
+}
+
+.methods__container {
+    display: flex;
+    justify-content: start
+}
+
+.methods__list {
+    width: 49%;
+    margin-right: 20px;
+    margin-bottom: 70px
+}
+
+.methods__link {
+    color: var(--gray);
+    padding-bottom: 3px;
+    font-size: 20px;
+    transition: color .2s, border-color .2s
+}
+
+.methods__app,
+.methods__doc {
+    transition: color .2s;
+    display: block;
+    font-weight: 600
+}
+
+.methods__link::before {
+    content: "—";
+    margin-right: 5px
+}
+
+.methods__link:hover {
+    color: var(--orange);
+    border-color: var(--orange)
+}
+
+.page-container {
+    padding: 70px 30px
+}
+
+.methods__page-title {
+    font-size: 35px;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 35px
+}
+
+.attention {
+    font-weight: 600;
+    margin-bottom: 20px
+}
+
+.methods__doc,
+.methods__text {
+    margin-bottom: 15px
+}
+
+.attention,
+.methods__text {
+    max-width: 700px
+}
+
+.methods__doc::before {
+    content: url(../icon/icon_doc.png);
+    vertical-align: middle
+}
+
+.methods__app {
+    width: fit-content
+}
+
+.methods__app:hover::after {
+    width: 100%
+}
+
+.methods__app::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    transition: width .4s
+}
+
+.page__button {
+    padding-top: 50px
+}
+
+.page__btn {
+    font-weight: 600;
+    background: var(--orange);
+    padding: 20px 40px;
+    border-radius: 6px;
+    transition: background-color .3s
+}

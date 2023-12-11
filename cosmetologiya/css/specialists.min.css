@@ -1,0 +1,361 @@
+.specialists {
+    padding-top: 150px;
+    margin-bottom: 150px;
+}
+
+.specialists__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 70px
+}
+
+.specialist__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    flex-basis: calc(50% - 20px);
+    border: 1px solid var(--border);
+    min-height: 450px;
+    overflow: hidden;
+    background-color: var(--white);
+    background-position: right -10px bottom;
+    background-repeat: no-repeat;
+    background-size: 250px 300px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.specialist-banner__training .training__btn:hover,
+.specialist__btn:hover {
+    color: var(--hover-orange)
+}
+
+.specialist__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    height: 460px;
+    background: rgba(167, 17, 129, 0.18);
+    opacity: .3;
+    border-radius: 50% 50% 79% 21%/77% 36% 64% 23%;
+    transform: rotate(20deg) translate(-40%, -20%);
+    z-index: 0;
+}
+
+.specialist__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 60px;
+    z-index: 2;
+}
+
+
+.specialist__info:hover .specialist__name {
+    color: var(--orange)
+}
+
+.specialists__descr {
+    padding: 60px
+}
+
+.specialist__name {
+    margin-bottom: 15px;
+    letter-spacing: .8px;
+    max-width: 140px;
+    transition: color .3s
+}
+
+.specialist__consultation,
+.specialist__profession {
+    font-size: 14px;
+    color: #909eaa;
+    line-height: 20px;
+    max-width: 230px
+}
+
+.specialist__price {
+    margin-bottom: 20px
+}
+
+.specialist__btn {
+    color: var(--orange);
+    transition: color .3s
+}
+
+.specialist__btn::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: var(--hover-orange);
+    transition: width .4s
+}
+
+.specialist__btn:hover::after {
+    width: 100%
+}
+
+.specialist-1 {
+    background-image: url(../specialists/Vorobieva.webp)
+}
+
+.specialist-2 {
+    background-image: url(../specialists/Danilova.webp)
+}
+
+.specialist-3 {
+    background-image: url(../specialists/Kukartseva.webp)
+}
+
+.specialist-4 {
+    background-image: url(../specialists/Terehova.webp)
+}
+
+.specialist-5 {
+    background-image: url(../specialists/Tomilova.webp)
+}
+
+.specialists__call {
+    background-color: var(--white);
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.specialists__call-text {
+    max-width: 50%
+}
+
+.call-back__btn {
+    padding: 0px 30px;
+    background-color: var(--orange);
+    white-space: nowrap;
+    line-height: 45px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color .3s;
+}
+
+.call-back__btn:hover {
+    background-color: var(--hover-orange);
+}
+
+/* modals */
+
+.modal-specialist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 964px;
+    max-width: 100%;
+    border: 1px solid var(--white);
+    border-radius: 6px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: hidden;
+    transform: scale(.1, .1) translate(-30%, -50%);
+    -webkit-transition: transform .6s;
+    -moz-transition: transform .6s;
+    -o-transition: transform .6s;
+    transition: transform .6s
+}
+
+.specialist-banner {
+    padding: 100px 110px 70px 100px;
+    background-color: rgba(148, 69, 128, 0.18);
+    background-position: right 100px bottom;
+    background-repeat: no-repeat;
+    background-size: 180px 230px
+}
+
+.modal-specialist.modal--visible {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 16px;
+    transform: scale(1, 1) translate(-50%, 0);
+    -webkit-transition: transform .6s;
+    -moz-transition: transform .6s;
+    -o-transition: transform .6s;
+    transition: transform .6s
+}
+
+.specialist-banner__name {
+    font-size: 30px;
+    margin-bottom: 40px
+}
+
+.specialist-banner__profession {
+    font-size: 14px;
+    color: #909eaa;
+    max-width: 450px;
+    line-height: 20px
+}
+
+.modal-specialist__content {
+    padding: 70px 70px 70px 100px
+}
+
+.banner__title {
+    font-size: 25px
+}
+
+.item__title {
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 20px
+}
+
+.item__descr {
+    padding-bottom: 40px
+}
+
+.experience__item {
+    border-left: 1px solid #e1e4e7;
+    position: relative;
+    padding-left: 35px
+}
+
+.experience__item:last-child {
+    border: none
+}
+
+.experience__item::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    border: 1px solid #e1e4e7;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0
+}
+
+.training__item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border)
+}
+
+.specialist-banner__specialization {
+    margin-bottom: 70px
+}
+
+.specialization__item::before {
+    content: "—";
+    margin-right: 5px
+}
+
+.training__item .item__descr {
+    padding: 0
+}
+
+.specialist-banner__training ul li:nth-child(1n+4) {
+    max-height: 0;
+    opacity: 0;
+    display: none;
+    -webkit-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    transition: .5s ease-in
+}
+
+.specialist-banner__training .training__btn {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border-top: 1px solid var(--orange);
+    color: var(--orange);
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s
+}
+
+.specialist-banner__training .training__btn .loaded {
+    display: none;
+}
+
+.specialist-banner__training #see__more-training-1,
+.specialist-banner__training #see__more-training-1:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-2,
+.specialist-banner__training #see__more-training-2:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-3,
+.specialist-banner__training #see__more-training-3:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-4,
+.specialist-banner__training #see__more-training-4:checked~.training__btn .unloaded {
+    display: none
+}
+
+.training__list {
+    position: relative
+}
+
+.specialist-banner__training #see__more-training-1~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-2~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-3~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-4~ul li:nth-child(3)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 200px;
+    background: linear-gradient(to top, #fff, #fff0)
+}
+
+.specialist-banner__training #see__more-training-1:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-2:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-3:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-4:checked~ul li:nth-child(3)::after {
+    content: '';
+    background: 0 0
+}
+
+.specialist-banner__training #see__more-training-1:checked~ul li:nth-child(1n+4),
+.specialist-banner__training #see__more-training-2:checked~ul li:nth-child(1n+4),
+.specialist-banner__training #see__more-training-3:checked~ul li:nth-child(1n+4),
+.specialist-banner__training #see__more-training-4:checked~ul li:nth-child(1n+4) {
+    max-height: 999px;
+    opacity: 1;
+    display: block;
+    -webkit-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    transition: .5s ease-in
+}
+
+.specialist-banner__training #see__more-training-1:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-2:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-3:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-4:checked~.training__btn .loaded {
+    display: block
+}

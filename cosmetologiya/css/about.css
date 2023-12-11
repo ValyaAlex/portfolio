@@ -1,0 +1,11 @@
+.about {
+    padding-top: 100px;
+}
+
+.about__text {
+    margin-bottom: 40px;
+}
+
+.about__text:last-child {
+    margin-bottom: 100px;
+}

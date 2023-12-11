@@ -1,0 +1,923 @@
+@media (max-width:1250px) {
+  .header__nav {
+    width: 90%
+  }
+
+  .hero__title {
+    width: 790px
+  }
+
+  .disease__item {
+    width: calc((100% / 4) - 20px)
+  }
+
+  .symptom__list {
+    padding: 50px 30px 50px 42%
+  }
+
+  .hero::after {
+    content: ''
+  }
+
+  .advantages__item::before {
+    clip-path: circle(3% at 15% 20%)
+  }
+}
+
+@media (max-width:1100px) {
+
+  .methods,
+  .swiper-slide-bg {
+    background-size: cover
+  }
+
+  .header__container {
+    padding: 20px
+  }
+
+  .nav__item {
+    padding: 0 20px
+  }
+
+  .hero__title {
+    width: 750px
+  }
+
+  .symptoms-title {
+    padding: 70px
+  }
+
+  .symptoms__title {
+    font-size: 25px;
+    line-height: 30px
+  }
+
+  .symptom__list {
+    padding: 50px 30px 50px 25%
+  }
+
+  .methods {
+    background-position: 0 0
+  }
+
+  .methods__list {
+    width: 60%
+  }
+
+  .disease__list {
+    margin-bottom: 40px
+  }
+
+  .container-disease ul li:nth-child(1n+9) {
+    max-height: 0;
+    display: none;
+    -webkit-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    transition: .5s ease-in
+  }
+
+  .container-disease .disease__btn-more {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border-top: 1px solid #c7c7c7;
+    color: #c7c7c7;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s
+  }
+
+  .disease__btn-more:hover {
+    color: #666
+  }
+
+  .container-disease #see__more-disease:checked~.disease__btn-more .loaded,
+  .container-disease .disease__btn-more .unloaded {
+    display: block
+  }
+
+  .container-disease #see__more-disease:checked~ul li:nth-child(1n+9) {
+    max-height: 999px;
+    display: flex;
+    -webkit-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    transition: .5s ease-in
+  }
+
+  .container-disease #see__more-disease:checked~.disease__btn-more .unloaded {
+    display: none
+  }
+
+  .call-back__img {
+    max-width: 60%
+  }
+
+  .specialist__card {
+    background-size: 300px 300px
+  }
+
+  .specialist__info,
+  .specialists__descr {
+    padding: 40px
+  }
+
+  .specialist__consultation,
+  .specialist__profession {
+    max-width: 150px
+  }
+
+  .slide-1 {
+    background-image: url(../img/slide1-768.webp)
+  }
+
+  .slide-2 {
+    background-image: url(../img/slide2-768.webp)
+  }
+
+  .slide-3 {
+    background-image: url(../img/slide3-768.webp)
+  }
+
+  .slide-4 {
+    background-image: url(../img/slide4-768.webp)
+  }
+
+  .slide-5 {
+    background-image: url(../img/slide5-768.webp)
+  }
+
+  .video__title {
+    padding-left: 0;
+    font-size: 25px;
+  }
+}
+
+@media (max-width:905px) {
+
+  .header__nav,
+  .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal
+  }
+
+  .header {
+    z-index: 5
+  }
+
+  .header__container {
+    position: relative;
+    display: flex;
+    align-items: center
+  }
+
+  .header__nav {
+    position: absolute;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    background-color: var(--white);
+    top: 90px;
+    left: 0;
+    width: 50%;
+    min-width: 250px;
+    height: 100vh;
+    padding: 50px;
+    overflow-y: auto;
+    visibility: hidden;
+    -webkit-transform: translateX(-120%);
+    -ms-transform: translateX(-120%);
+    transform: translateX(-120%);
+    -webkit-transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: visibility .3s ease-in-out, transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -o-transition: visibility .3s ease-in-out, transform .3s ease-in-out
+  }
+
+  .nav .nav__list {
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+
+  .nav .nav__item {
+    line-height: 50px
+  }
+
+  .nav--active {
+    visibility: visible;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    padding: 30px
+  }
+
+  .nav__link {
+    font-weight: 400;
+    font-size: 18px
+  }
+
+  .close {
+    display: block;
+    margin-bottom: 100px
+  }
+
+  .stop-scroll {
+    overflow: hidden
+  }
+
+  .burger {
+    width: 40px;
+    height: 25px;
+    display: block;
+    visibility: visible;
+    position: relative
+  }
+
+  .burger--active .burger__line {
+    background-color: var(--orange);
+    -webkit-transform: rotate(45deg) translateY(5px);
+    -ms-transform: rotate(45deg) translateY(5px);
+    transform: rotate(45deg) translateY(5px)
+  }
+
+  .burger--active .burger__line:nth-child(2) {
+    -webkit-transform: rotate(-45deg) translateY(-5px);
+    -ms-transform: rotate(-45deg) translateY(-5px);
+    transform: rotate(-45deg) translateY(-5px)
+  }
+
+  .burger::after {
+    content: "";
+    top: 0;
+    left: 0;
+    outline: 0
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    border-radius: inherit;
+    background-color: var(--gray);
+    -webkit-transition: width .1s, -webkit-transform .1s;
+    transition: width .1s, transform .1s, -webkit-transform .1s;
+    -o-transition: width .1s, transform .1s
+  }
+
+  .burger__line:first-child {
+    top: 5px
+  }
+
+  .burger__line:nth-child(2) {
+    top: 51%
+  }
+
+  .advantages__item {
+    padding: 40px;
+    max-width: 100%
+  }
+
+  .advantages__item::before {
+    clip-path: circle(3% at 10% 26%)
+  }
+
+  .hero__btn,
+  body {
+    font-size: 16px
+  }
+
+  .hero__title {
+    font-size: 2.6em;
+    width: 600px
+  }
+
+  .about__text,
+  .advantages__item-title__text,
+  .hero__text,
+  .methods__link,
+  .symptoms__if-text {
+    font-size: 18px
+  }
+
+  .advantages__item-title {
+    margin-bottom: 0
+  }
+
+  .symptoms .swiper {
+    padding-bottom: 50px;
+    width: 100%
+  }
+
+  .swiper .swiper-pagination {
+    display: block;
+    top: 95% !important
+  }
+
+  .swiper .swiper-pagination-bullet-active {
+    background: var(--orange)
+  }
+
+  .swiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px
+  }
+
+  .symptom__list {
+    padding: 50px 30px 50px 15%
+  }
+
+  .title,
+  .call-back__title,
+  .contacts__title,
+  .container-disease-title,
+  .video__title {
+    font-size: 25px
+  }
+
+  .call-back__container,
+  .info__container {
+    flex-direction: column-reverse
+  }
+
+  .call-back__img,
+  .info__block,
+  .info__comment,
+  .info__text {
+    max-width: 100%
+  }
+
+  .call-back__text {
+    flex-basis: 100%;
+    padding-top: 0;
+    text-align: center
+  }
+
+  .call-back__descr {
+    font-size: 18px;
+    max-width: 100%
+  }
+
+  .header__btn,
+  .call-back__btn {
+    font-size: 16px
+  }
+
+  .call-back__btn {
+    padding: 16px 30px;
+  }
+
+  .contacts-info,
+  .disease__btn {
+    font-size: 16px
+  }
+
+  .info__block,
+  .info__comment {
+    margin-bottom: 40px
+  }
+
+  .info__swiper-wrapper {
+    margin-right: 0
+  }
+
+  .info__list .swiper-slide {
+    width: 90%
+  }
+
+  .info__descr,
+  .info__item-title {
+    margin-bottom: 0;
+    line-height: 25px
+  }
+
+  .info .swiper-button-next,
+  .info .swiper-button-prev {
+    left: 47%
+  }
+
+  .methods__list {
+    width: 70%
+  }
+
+  .modal {
+    padding: 70px 30px 50px;
+    height: 480px;
+    width: 600px
+  }
+
+  .specialists__container {
+    gap: 20px
+  }
+
+  .specialist__card {
+    flex-basis: calc(50% - 10px);
+    background-position: right -35px bottom;
+    background-size: 230px 230px;
+    min-height: 400px
+  }
+
+  .specialists__call-text {
+    max-width: 360px;
+    line-height: 30px
+  }
+
+  .ac .ac-header {
+    font-size: 20px;
+    line-height: 30px
+  }
+
+  .contacts-info {
+    max-width: 35%;
+    margin-right: 20px
+  }
+
+  .symptoms .swiper-button-next,
+  .symptoms .swiper-button-prev {
+    display: none
+  }
+
+  .specialist-banner {
+    padding: 70px 70px 50px 50px
+  }
+
+  .specialist-banner__name,
+  .specialist-banner__profession {
+    max-width: 46%
+  }
+
+  .modal-specialist__content {
+    padding: 70px 40px 70px 50px
+  }
+
+  .video__title {
+    max-width: 30%;
+  }
+
+  .video__video {
+    max-width: 65%;
+  }
+}
+
+@media (max-width:720px) {
+  .header__container {
+    padding: 10px;
+  }
+
+  .hero {
+    padding-top: 100px
+  }
+
+  .hero__btn {
+    margin-bottom: 100px
+  }
+
+  .diagnoses__list,
+  .hero__title,
+  .methods__list {
+    width: 100%
+  }
+
+  .hero .container {
+    text-align: center
+  }
+
+  .hero__text {
+    width: 100%;
+    line-height: 30px
+  }
+
+  .advantages__item::before {
+    clip-path: circle(3% at 15% 22%)
+  }
+
+  .symptom__diagnoses-title,
+  .symptoms__title {
+    font-size: 20px;
+    font-weight: 500
+  }
+
+  .contacts-container,
+  .diagnoses__lists {
+    flex-direction: column
+  }
+
+  .disease__item {
+    width: calc((100% / 3) - 20px)
+  }
+
+  .specialist__card {
+    flex-basis: 100%;
+    height: 300px;
+    min-height: 100%;
+    padding: 40px;
+    background-size: 250px 250px
+  }
+
+  .specialist__info,
+  .specialists__descr {
+    padding: 0
+  }
+
+  .specialist__name {
+    max-width: 100%
+  }
+
+  .specialist__profession {
+    max-width: 70%
+  }
+
+  .specialist__price {
+    margin-bottom: 10px
+  }
+
+  .contacts-info {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px
+  }
+
+  .contacts__border {
+    padding-bottom: 30px;
+    margin-bottom: 30px
+  }
+
+  .container-disease ul li:nth-child(1n+7) {
+    max-height: 0;
+    display: none;
+    -webkit-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    transition: .5s ease-in
+  }
+
+  .specialists__call,
+  .symptoms__if {
+    padding: 20px
+  }
+
+  .specialists__call-text {
+    max-width: 270px;
+    margin-right: 20px
+  }
+
+  .ac .ac-trigger {
+    padding: 20px 20px 20px 0
+  }
+
+  .ac .ac-panel .ac-text {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 15px;
+    margin-bottom: 20px
+  }
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px
+  }
+
+  .header__nav {
+    padding: 10px
+  }
+
+  .modal-overlay__text,
+  .modal__more,
+  .nav__link {
+    font-size: 14px
+  }
+
+  .specialist-banner {
+    background-position: right 40px bottom
+  }
+
+  .ac .ac-header,
+  .ac .ac-panel .ac-text {
+    font-size: inherit
+  }
+
+  .plus-minus-toggle {
+    height: 0
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video__title {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .video__video {
+    max-width: 100%;
+  }
+}
+
+@media (max-width:550px) {
+  section {
+    padding-left: 10px;
+    padding-right: 10px
+  }
+
+  .header__container {
+    padding: 5px
+  }
+
+  .header__nav {
+    top: 81px
+  }
+
+  .about__text,
+  .advantages__item-title__text,
+  .hero__text,
+  .symptoms__if-text {
+    font-size: 14px;
+    line-height: 30px
+  }
+
+  .hero__title {
+    line-height: 30px;
+    font-size: 1.5em
+  }
+
+  .title,
+  .symptom__diagnoses-title,
+  .info__title,
+  .video__title,
+  .info__text-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .ac .ac-header,
+  .disease__btn,
+  .hero__btn,
+  .methods__link,
+  .popup-mobile,
+  .popup__text,
+  .symptom__title,
+  body,
+  .header__btn,
+  .call-back__btn {
+    font-size: 14px
+  }
+
+  .call-back__btn {
+    padding: 14px 30px;
+  }
+
+  .icon__logo {
+    display: none
+  }
+
+  .icon__logo-small {
+    display: block;
+    width: 70px;
+    height: 70px
+  }
+
+  .hero {
+    background-color: var(--bg-orange);
+    padding-top: 120px
+  }
+
+  .hero__btn {
+    margin-bottom: 100px;
+    line-height: 40px
+  }
+
+  .advantages__item,
+  .symptoms-title {
+    padding: 20px
+  }
+
+  .symptom__list {
+    padding: 40px 10px 10px 10%
+  }
+
+  .symptom__title {
+    margin-bottom: 10px;
+    line-height: 30px
+  }
+
+  .call-back,
+  .disease,
+  .info,
+  .methods,
+  .specialists,
+  .symptom__diagnoses,
+  .symptoms-swiper,
+  .symptoms__if,
+  .video {
+    margin-bottom: 60px
+  }
+
+  .symptoms__item {
+    line-height: 25px
+  }
+
+  .symptoms .swiper {
+    min-height: 530px;
+    height: 100%
+  }
+
+  .disease__item {
+    width: calc((100% / 2) - 10px)
+  }
+
+  .container-disease ul li:nth-child(1n+5) {
+    max-height: 0;
+    display: none;
+    -webkit-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    transition: .5s ease-in
+  }
+
+  .modal {
+    height: 100vh;
+    top: 0;
+    width: 100%
+  }
+
+  .specialist__card {
+    height: 350px;
+    padding: 20px;
+    background-size: 200px 200px
+  }
+
+  .specialists__call {
+    display: flex;
+    flex-direction: column
+  }
+
+  .specialists__call-text {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center
+  }
+
+  .popup__text {
+    width: 250px;
+    top: 100%;
+    left: -125px;
+    bottom: 0;
+    min-height: 120px
+  }
+
+  .popup-mobile {
+    top: -150px;
+    bottom: 100%;
+    min-height: 175px
+  }
+
+  .popup-mobile-320 {
+    font-size: 14px;
+    min-height: 50px;
+    bottom: 100%;
+    top: -40px
+  }
+
+  .info__descr,
+  .info__item-title {
+    font-size: 13px
+  }
+
+  .specialist-banner__name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 25px
+  }
+
+  .banner__title {
+    font-size: 20px
+  }
+
+  .specialist-banner {
+    padding: 40px 20px 20px 30px;
+    background-size: 150px 150px
+  }
+
+  .modal__btn-close {
+    top: 20px;
+    right: 20px
+  }
+
+  .modal-specialist__content {
+    padding: 10px 20px 20px 30px
+  }
+
+  .disease__page-title {
+    font-size: 25px;
+    padding: 25px
+  }
+
+  ol {
+    padding-left: 0
+  }
+
+  .page-container {
+    padding: 30px
+  }
+
+  .modal-specialist.modal--visible {
+    top: 0
+  }
+}
+
+@media (max-width:403px) {
+  .popup__text {
+    min-height: 140px;
+    width: 200px;
+    line-height: 20px
+  }
+
+  .popup-mobile {
+    min-height: 220px;
+    top: -240px;
+    bottom: 100%;
+    left: 100px
+  }
+
+  .popup-mobile-320 {
+    min-height: 40px;
+    top: -65px;
+    left: 100px
+  }
+
+  .specialist-banner {
+    background-position: right 25px bottom
+  }
+
+  .specialist-banner__name {
+    font-size: 16px;
+    line-height: 20px
+  }
+
+  .specialist-banner__profession {
+    font-size: 12px;
+    line-height: 16px
+  }
+
+  .banner__title {
+    font-size: 16px
+  }
+
+  .item__descr,
+  .item__title,
+  .progress__item,
+  .specialization__item {
+    font-size: 14px
+  }
+
+  .article__link {
+    max-width: 320px;
+    width: 100%
+  }
+}
+
+@media (max-width:344px) {
+
+  .info__descr,
+  .info__item-title,
+  .popup__text {
+    font-size: 12px
+  }
+
+  .popup__text {
+    min-height: 120px;
+    left: 120px;
+    padding: 7px 11px
+  }
+
+  .popup-mobile {
+    top: -175px;
+    left: 100px
+  }
+
+  .popup-mobile-320 {
+    top: -60px;
+    min-height: 35px;
+    left: 100px
+  }
+
+  .disease__btn {
+    font-size: 13px
+  }
+}
