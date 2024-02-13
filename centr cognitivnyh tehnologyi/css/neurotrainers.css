@@ -1,0 +1,202 @@
+.neurotrainers__text {
+    margin-bottom: 40px;
+}
+
+.neurotrainers__block {
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.neurotrainers__block:nth-last-of-type(2) {
+    justify-content: start;
+}
+
+.neurotrainers .block__text {
+    width: 50%;
+}
+
+.neurotrainers-container {
+    padding-top: 70px;
+}
+
+.neurotrainers-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.neurotrainers-title span {
+    padding-left: 10px;
+    color: #CACACA;
+    font-size: 16px;
+    border: none;
+    font-weight: normal;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.neurotrainers-title span:hover {
+    color: var(--orange);
+}
+
+.neurotrainer__list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.neurotrainer__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    width: calc((100% / 4) - 20px);
+    background-color: var(--white);
+}
+
+.neurotrainers__img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.neurotrainers__link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--blue);
+    transition: color .3s;
+}
+
+.neurotrainers__link:hover {
+    color: var(--orange);
+}
+
+.neurotrainers-title {
+    font-size: 20px;
+}
+
+.neurotrainer__item .neurotrainers-title {
+    margin: 0;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.neurotrainers {
+    position: relative;
+}
+
+.neurotrainers .bg {
+    background-image: url(../img/neurotrainers-bg.webp);
+    top: 20%;
+    height: 2000px;
+    opacity: 0.6;
+}
+
+.neurotrainers .bg-3 {
+    transform: rotate(180deg);
+    top: 55%;
+}
+
+/********* pages ********/
+
+.page {
+    position: relative;
+    overflow: hidden;
+}
+
+.page .bg {
+    background-image: url(../img/bg.webp);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 100% 100%;
+    height: 850px;
+    opacity: .1;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    transform: scale(-1, -1);
+    z-index: -1;
+}
+
+.page .bg-2 {
+    background-image: url(../img/bg-2.webp);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 900px 100%;
+    height: 800px;
+    opacity: .2;
+    position: absolute;
+    top: 65%;
+    right: -100px;
+    width: 100%;
+    z-index: -1;
+}
+
+.page__container {
+    padding-top: 70px;
+}
+
+.page__title {
+    background-color: rgba(205, 163, 253, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.page__container .title {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.page__block {
+    margin-bottom: 60px;
+}
+
+.page__text {
+    margin-bottom: 20px;
+}
+
+.mb {
+    margin-bottom: 0;
+}
+
+.page__list {
+    margin-bottom: 20px;
+}
+
+.page__list .list__item::before {
+    content: '—';
+    margin-right: 7px;
+}
+
+.quote {
+    padding-left: 50px;
+    border-left: 4px solid #e2e2e2;
+    margin-bottom: 40px;
+}
+
+.quote cite {
+    font-style: italic;
+    font-weight: normal;
+    color: #aaaaaa;
+}
+
+.contacts__tel {
+    transition: color .3s;
+}
+
+.contacts__tel:hover {
+    color: var(--orange);
+}
+
+.width {
+    width: 50%;
+}

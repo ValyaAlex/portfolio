@@ -1,0 +1,1024 @@
+.specialists {
+    margin-bottom: 150px;
+}
+
+.specialists__speciality {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.speciality__btn {
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+    transition: color .3s, background-color .3s;
+}
+
+.speciality__btn:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.speciality__btn:active {
+    color: var(--white);
+    background-color: var(--hover-orange);
+}
+
+.speciality__btn--active {
+    color: var(--white);
+    background-color: var(--hover-orange);
+}
+
+.speciality {
+    position: relative;
+}
+
+.specialists__container {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.speciality--active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    animation: animate 0.5s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.specialist__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    flex-basis: calc(33% - 20px);
+    border: 1px solid var(--border);
+    min-height: 250px;
+    overflow: hidden;
+    background-position: right -30px bottom;
+    background-repeat: no-repeat;
+    background-size: 230px 230px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.psychiatrist .specialist__card,
+.therapists .specialist__card {
+    flex-basis: calc(50% - 20px);
+}
+
+.instructors .specialist__card {
+    background-position: right -10px bottom;
+    background-size: 170px 195px;
+}
+
+.instructors .specialist__profession {
+    max-width: 170px;
+}
+
+.psychologists .specialist__card,
+.speech-therapists .specialist__card,
+.denver .specialist__card,
+.aba-instructors .specialist__card,
+.manualy .specialist__card {
+    min-height: 350px;
+}
+
+.specialist__info:hover .specialist__name {
+    color: var(--orange);
+}
+
+.specialist__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    height: 460px;
+    background: rgba(11, 137, 240, 0.18);
+    opacity: .3;
+    border-radius: 50% 50% 79% 21% / 77% 36% 64% 23%;
+    transform: rotate(20deg) translate(-55%, -25%);
+    z-index: -2;
+}
+
+.specialist__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+}
+
+.specialists__descr {
+    padding: 20px;
+}
+
+.specialist__name {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    letter-spacing: .8px;
+    max-width: 200px;
+    transition: color .3s;
+}
+
+.specialist__profession,
+.specialist__consultation {
+    font-size: 14px;
+    color: #909EAA;
+    line-height: 20px;
+    max-width: 230px;
+}
+
+.specialist__price {
+    margin-bottom: 20px;
+}
+
+.specialist__btn {
+    color: var(--orange);
+    transition: color .3s;
+
+}
+
+.specialist__btn:hover {
+    color: var(--hover-orange);
+}
+
+.specialist__btn::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: var(--hover-orange);
+    transition: width 0.4s;
+}
+
+.specialist__btn:hover::after {
+    width: 100%;
+}
+
+.neurolog-1 {
+    background-image: url(../specialists/nevrologs/Sharonova.webp);
+}
+
+.neurolog-2 {
+    background-image: url(../specialists/nevrologs/Eganova.webp);
+}
+
+.neurolog-3 {
+    background-image: url(../specialists/nevrologs/Baranov.webp);
+}
+
+.neurolog-4 {
+    background-image: url(../specialists/nevrologs/Gimaltinova-M.V.webp);
+}
+
+.neurolog-5 {
+    background-image: url(../specialists/nevrologs/Vyhovskaja.webp);
+}
+
+.neurolog-6 {
+    background-image: url(../specialists/nevrologs/Kolonikina.webp);
+}
+
+.neurolog-7 {
+    background-image: url(../specialists/nevrologs/Nikova.webp);
+}
+
+.neurolog-8 {
+    background-image: url(../specialists/nevrologs/Onuchina_IL.webp);
+}
+
+.neurolog-9 {
+    background-image: url(../specialists/nevrologs/Telegina_2lNnFec.webp);
+    background-size: 210px 230px;
+}
+
+.instructor-1 {
+    background-image: url(../specialists/instructors/Aleksandrova.webp);
+}
+.instructor-2 {
+    background-image: url(../specialists/instructors/Andrievskih.webp);
+}
+
+.instructor-3 {
+    background-image: url(../specialists/instructors/AntonovaE.webp);
+}
+.instructors .instructor-3 {
+    background-size: 200px 195px;
+}
+.instructor-4 {
+    background-image: url(../specialists/instructors/Antonova.webp);
+}
+.instructors .instructor-4 {
+    background-size: 160px 195px;
+}
+.instructor-5 {
+    background-image: url(../specialists/instructors/Belyh.webp);
+}
+.instructors .instructor-5 {
+    background-size: 165px 195px;
+}
+.instructor-6 {
+    background-image: url(../specialists/instructors/Bershadskaya.webp);
+}
+.instructors .instructor-6 {
+    background-size: 150px 195px;
+}
+.instructor-7 {
+    background-image: url(../specialists/instructors/Burmistrova.webp);
+}
+.instructors .instructor-7 {
+    background-size: 160px 195px;
+}
+.instructor-8 {
+    background-image: url(../specialists/instructors/Vasileva.webp);
+}
+.instructors .instructor-8 {
+    background-size: 155px 195px;
+}
+.instructor-9 {
+    background-image: url(../specialists/instructors/Gorelov.webp);
+}
+.instructors .instructor-9 {
+    background-size: 195px 190px;
+}
+.instructor-10 {
+    background-image: url(../specialists/instructors/Emeljanova.webp);
+}
+.instructors .instructor-10 {
+    background-size: 195px 195px;
+}
+.instructor-11 {
+    background-image: url(../specialists/instructors/Jemchugova.webp);
+}
+.instructor-12 {
+    background-image: url(../specialists/instructors/Jidkova.webp);
+}
+.instructors .instructor-12 {
+    background-size: 155px 195px;
+}
+.instructor-13 {
+    background-image: url(../specialists/instructors/Zaharchenko.webp);
+}
+.instructors .instructor-13 {
+    background-size: 135px 195px;
+}
+.instructor-14 {
+    background-image: url(../specialists/instructors/Ivanova.webp);
+}
+.instructors .instructor-14 {
+    background-size: 155px 195px;
+}
+.instructor-15 {
+    background-image: url(../specialists/instructors/Kamenets.webp);
+}
+.instructors .instructor-15 {
+    background-size: 155px 195px;
+}
+.instructor-16 {
+    background-image: url(../specialists/instructors/Lazarev.webp);
+}
+.instructor-17 {
+    background-image: url(../specialists/instructors/Lecomtseva.webp);
+}
+.instructor-18 {
+    background-image: url(../specialists/instructors/Lobanova.webp);
+}
+.instructors .instructor-18 {
+    background-size: 155px 195px;
+}
+.instructor-19 {
+    background-image: url(../specialists/instructors/Lutkova.webp);
+}
+.instructor-20 {
+    background-image: url(../specialists/instructors/Mazitova.webp);
+}
+.instructors .instructor-20 {
+    background-size: 155px 195px;
+}
+.instructor-21 {
+    background-image: url(../specialists/instructors/Maklakova.webp);
+}
+.instructors .instructor-21 {
+    background-size: 155px 195px;
+}
+.instructor-22 {
+    background-image: url(../specialists/instructors/Munareva.webp);
+}
+.instructors .instructor-22 {
+    background-size: 145px 195px;
+}
+.instructor-23 {
+    background-image: url(../specialists/instructors/Pankova.webp);
+}
+.instructor-24 {
+    background-image: url(../specialists/instructors/Pestova.webp);
+}
+.instructors .instructor-24 {
+    background-size: 155px 195px;
+}
+.instructor-25 {
+    background-image: url(../specialists/instructors/Rodionova.webp);
+}
+.instructors .instructor-25 {
+    background-size: 155px 195px;
+}
+.instructor-26 {
+    background-image: url(../specialists/instructors/Rybalchenko.webp);
+}
+.instructors  .instructor-26 {
+    background-size: 155px 195px;
+}
+.instructor-27 {
+    background-image: url(../specialists/instructors/Strahova.webp);
+}
+.instructors .instructor-27 {
+    background-size: 155px 195px;
+}
+.instructor-28 {
+    background-image: url(../specialists/instructors/Surimova.webp);
+}
+.instructor-29 {
+    background-image: url(../specialists/instructors/Tetutskaya.webp);
+}
+.instructors .instructor-29 {
+    background-size: 200px 195px;
+}
+.instructor-30 {
+    background-image: url(../specialists/instructors/Torgashova.webp);
+}
+.instructor-31 {
+    background-image: url(../specialists/instructors/TuravininN.webp);
+}
+.instructors .instructor-31 {
+    background-size: 155px 195px;
+}
+.instructor-32 {
+    background-image: url(../specialists/instructors/TuravininR.webp);
+}
+.instructors .instructor-32 {
+    background-size: 185px 185px;
+}
+.instructor-33 {
+    background-image: url(../specialists/instructors/Usova.webp);
+}
+.instructors .instructor-33 {
+    background-size: 155px 195px;
+}
+.instructor-34 {
+    background-image: url(../specialists/instructors/Fadeeva.webp);
+}
+.instructors .instructor-34 {
+    background-size: 155px 195px;
+}
+.instructor-35 {
+    background-image: url(../specialists/instructors/Filipeva.webp);
+}
+.instructors .instructor-35 {
+    background-size: 155px 195px;
+}
+.instructor-36 {
+    background-image: url(../specialists/instructors/Shemarina.webp);
+}
+.instructors .instructor-36 {
+    background-size: 155px 195px;
+}
+.instructor-37 {
+    background-image: url(../specialists/instructors/Shipulina.webp);
+}
+.instructors .instructor-37 {
+    background-size: 185px 190px;
+}
+.instructor-38 {
+    background-image: url(../specialists/instructors/Sherbakova.webp)
+}
+.instructor-39 {
+    background-image: url(../specialists/instructors/Yalkovskaya.webp)
+}
+.instructor-40 {
+    background-image: url(../specialists/instructors/Matuhina.webp);
+}
+.instructors .instructor-40 {
+    background-size: 185px 180px;
+}
+.instructor-41 {
+    background-image: url(../specialists/instructors/Roginckyi.webp);
+}
+.instructors .instructor-41 {
+    background-size: 185px 190px;
+}
+.instructor-42 {
+    background-image: url(../specialists/instructors/Solodov_PA.webp);
+}
+.instructors .instructor-42 {
+    background-size: 185px 185px;
+}
+.instructor-43 {
+    background-image: url(../specialists/instructors/Firsova.webp);
+}
+
+.psychiatrist-1 {
+   background-image: url(../specialists/psihiatrs/Sabantsev.webp); 
+}
+
+.psychiatrist-2 {
+background-image: url(../specialists/psihiatrs/Mashkov.webp);
+}
+
+.therapist-1 {
+    background-image: url(../specialists/terapevts/Gromova_5T4QtKW.webp); 
+}
+ 
+.therapist-2 {
+ background-image: url(../specialists/terapevts/Bykova.webp);
+}
+
+.psychologist-1 {
+    background-image: url(../specialists/psihologs/Miller.webp);
+}
+.psychologist-2 {
+    background-image: url(../specialists/psihologs/Kamenets_sajt.webp);
+}
+.psychologist-3 {
+    background-image: url(../specialists/psihologs/Kovalkovskaja.webp);
+}
+.psychologist-4 {
+    background-image: url(../specialists/psihologs/Muraveva_A.V..webp);
+}
+.psychologist-5 {
+    background-image: url(../specialists/psihologs/Obuhova.webp);
+}
+.psychologist-6 {
+    background-image: url(../specialists/psihologs/Rabinovich.webp);
+}
+.psychologist-7 {
+    background-image: url(../specialists/psihologs/Roginckyi.webp);
+}
+.psychologist-8{
+    background-image: url(../specialists/psihologs/Solodov_PA.webp);
+}
+.psychologist-9{
+    background-image: url(../specialists/psihologs/Shlyapina.webp);
+}
+.psychologists .psychologist-9{
+    background-size: 210px 230px;
+}
+
+.psychologist-10{
+    background-image: url(../specialists/psihologs/Sharapova_A.V..webp);
+}
+.speech-therapist-1 {
+    background-image: url(../specialists/logopeds/Baklanovskaya.webp);
+}
+.speech-therapists .speech-therapist-1 {
+    background-size: 190px 230px;
+    background-position: right bottom;
+}
+.speech-therapist-2 {
+    background-image: url(../specialists/logopeds/Dunaeva.webp);
+}
+.speech-therapist-3 {
+    background-image: url(../specialists/logopeds/Korepanova.webp);
+}
+.speech-therapist-4 {
+    background-image: url(../specialists/logopeds/Misnik.webp);
+}
+.speech-therapists .speech-therapist-4 {
+    background-size: 200px 230px;
+}
+.speech-therapist-5 {
+    background-image: url(../specialists/logopeds/sushkova.webp);
+}
+.speech-therapist-6 {
+    background-image: url(../specialists/logopeds/yuklyaevskih.webp);
+}
+
+.denver-1 {
+    background-image: url(../specialists/denver/Tarasova_S.A..webp);
+}
+.denver-2 {
+    background-image: url(../specialists/denver/Shipulina.webp);
+}
+.denver-3 {
+    background-image: url(../specialists/denver/Tuktareva.webp);
+}
+.denver-4 {
+    background-image: url(../specialists/denver/Foto_Sulejmanova.webp);
+}
+.denver-5 {
+    background-image: url(../specialists/denver/Demchuk_N.V..webp);
+}
+.osteopath-1 {
+    background-image: url(../specialists/osteopat/Chugaeva.webp);
+}
+.manualy .osteopath-1 {
+    background-size: 170px 230px;
+}
+.massage-therapist-1 {
+    background-image: url(../specialists/massage/Rudikova.webp);
+}
+.massage-therapist-2 {
+    background-image: url(../specialists/massage/Konkova.webp);
+}
+.aba-instructor-1 {
+    background-image: url(../specialists/aba-instructors/Baklanovskaya.webp);
+}
+.aba-instructors .aba-instructor-1 {
+    background-size: 190px 230px;
+    background-position: right bottom;
+}
+.aba-instructor-2 {
+    background-image: url(../specialists/aba-instructors/Karpova_O.V_1.webp);
+}
+.aba-instructor-3 {
+    background-image: url(../specialists/aba-instructors/Klimenko_AF.webp);
+}
+.aba-instructor-4 {
+    background-image: url(../specialists/aba-instructors/Lajs_I.V..webp);
+}
+.aba-instructors .aba-instructor-5 {
+    background-image: url(../specialists/aba-instructors/Matuhina.webp);
+    background-size: 220px 210px;
+}
+.aba-instructor-6 {
+    background-image: url(../specialists/aba-instructors/pyatkova.webp);
+}
+.aba-instructors .aba-instructor-7 {
+    background-image: url(../specialists/aba-instructors/Rodionova.webp);
+    background-position: right bottom;
+    background-size: 180px 230px;
+}
+.aba-instructor-8 {
+    background-image: url(../specialists/aba-instructors/spiridenko.webp);
+}
+.aba-instructor-9 {
+    background-image: url(../specialists/aba-instructors/Yagodina.webp);
+}
+.aba-instructors .aba-instructor-9 {
+    background-position: right -20px bottom;
+    background-size: 200px 230px;
+}
+.music-therapist-2 {
+    background-image: url(../specialists/psihologs/Firsova.webp);
+    background-size: 200px 230px;
+}
+.music-therapist-3 {
+    background-image: url(../specialists/psihologs/spiridenko.webp);
+}
+
+.speciality__text {
+    width: 100%;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.speciality__list .list__item::before {
+    content: '—';
+    margin-right: 5px;
+}
+
+.progress__item {
+    font-weight: 600;
+}
+
+.progress__item .item__descr {
+    padding: 0;
+    font-weight: normal;
+}
+
+.specialists__call {
+    background-color: var(--bg-blue);
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.specialists__call-text {
+    max-width: 50%;
+
+}
+
+/*** modal  ***/
+
+
+.modal-specialist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 964px;
+    max-width: 100%;
+    border: 1px solid var(--white);
+    border-radius: 6px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: hidden;
+    transform: scale(.1, .1) translate(-30%, -50%);
+    -webkit-transition: transform .6s ease;
+    -moz-transition: transform .6s ease;
+    -o-transition: transform .6s ease;
+    transition: transform .6s ease;
+}
+
+.specialist-banner {
+    padding: 100px 110px 70px 100px;
+    background-color: #EDF2F5;
+    background-position: right 80px bottom;
+    background-repeat: no-repeat;
+    background-size: 230px 230px;
+}
+
+.modal-specialist.modal--visible {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 16px;
+    transform: scale(1, 1) translate(-50%, 0);
+    -webkit-transition: transform .6s ease;
+    -moz-transition: transform .6s ease;
+    -o-transition: transform .6s ease;
+    transition: transform .6s ease;
+}
+
+.specialist-banner__name {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.specialist-banner__profession {
+    font-size: 14px;
+    color: #909EAA;
+    max-width: 450px;
+    line-height: 20px;
+}
+
+.modal-specialist__content {
+    padding: 70px 70px 70px 100px;
+}
+
+.banner__title {
+    font-size: 25px;
+}
+
+.item__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.item__descr {
+    padding-bottom: 40px;
+}
+
+
+.experience__item {
+    border-left: 1px solid #E1E4E7;
+    position: relative;
+    padding-left: 35px;
+}
+
+.experience__item:last-child {
+    border: none;
+}
+
+.experience__item::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    border: 1px solid #E1E4E7;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+}
+
+.progress__item,
+.training__item {
+    padding: 20px 0;
+}
+
+.progress__item,
+.training__item {
+    border-bottom: 1px solid var(--border);
+}
+
+.specialist-banner__progress,
+.specialist-banner__specialization {
+    margin-bottom: 70px;
+}
+
+.specialization__item::before {
+    content: "—";
+    margin-right: 5px;
+}
+
+.training__item .item__descr {
+    padding: 0;
+}
+
+.specialist-banner__training ul li:nth-child(1n + 10) {
+    max-height: 0;
+    opacity: 0;
+    display: none;
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+}
+
+.specialist-banner__training .training__btn {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border-top: 1px solid var(--orange);
+    color: var(--orange);
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+}
+
+.specialist-banner__training .training__btn:hover {
+    color: var(--hover-orange);
+}
+
+.specialist-banner__training .training__btn .loaded {
+    display: none;
+}
+
+.training__list {
+    position: relative;
+}
+
+.article__flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.specialist-banner__training #see__more-training-1,
+.specialist-banner__training #see__more-training-2,
+.specialist-banner__training #see__more-training-3,
+.specialist-banner__training #see__more-training-4,
+.specialist-banner__training #see__more-training-5,
+.specialist-banner__training #see__more-training-6,
+.specialist-banner__training #see__more-training-7,
+.specialist-banner__training #see__more-training-8,
+.specialist-banner__training #see__more-training-9,
+.specialist-banner__training #see__more-training-10,
+.specialist-banner__training #see__more-training-11,
+.specialist-banner__training #see__more-training-12,
+.specialist-banner__training #see__more-training-13,
+.specialist-banner__training #see__more-training-14,
+.specialist-banner__training #see__more-training-15,
+.specialist-banner__training #see__more-training-16,
+.specialist-banner__training #see__more-training-17 {
+    display: none;
+}
+
+.specialist-banner__training #see__more-training-1~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-2~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-3~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-4~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-5~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-6~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-7~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-8~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-9~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-10~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-11~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-12~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-13~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-14~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-15~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-16~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-17~ul li:nth-child(3)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 200px;
+    background: linear-gradient(to top, #FFF, #FFF0);
+}
+
+.specialist-banner__training #see__more-training-1:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-2:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-3:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-4:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-5:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-6:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-7:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-8:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-9:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-10:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-11:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-12:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-13:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-14:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-15:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-16:checked~ul li:nth-child(3)::after,
+.specialist-banner__training #see__more-training-17:checked~ul li:nth-child(3)::after {
+    content: '';
+    background: none;
+}
+
+.specialist-banner__training #see__more-training-1:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-2:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-3:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-4:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-5:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-6:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-7:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-8:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-9:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-10:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-11:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-12:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-13:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-14:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-15:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-16:checked~ul li:nth-child(1n + 4),
+.specialist-banner__training #see__more-training-17:checked~ul li:nth-child(1n + 4) {
+    max-height: 999px;
+    opacity: 1;
+    display: block;
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+}
+
+.specialist-banner__training #see__more-training-1:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-2:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-3:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-4:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-5:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-6:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-7:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-8:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-9:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-10:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-11:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-12:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-13:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-14:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-15:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-16:checked~.training__btn .loaded,
+.specialist-banner__training #see__more-training-17:checked~.training__btn .loaded  {
+    display: block;
+}
+
+.specialist-banner__training #see__more-training-1:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-2:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-3:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-4:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-5:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-6:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-7:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-8:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-9:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-10:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-11:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-12:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-13:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-14:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-15:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-16:checked~.training__btn .unloaded,
+.specialist-banner__training #see__more-training-17:checked~.training__btn .unloaded   {
+    display: none;
+}
+
+.article__block {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.article__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 600;
+    width: 350px;
+    height: 200px;
+    line-height: 20px;
+    transition: color .3s, border-color 0.3s;
+}
+
+.article__link:hover {
+    color: var(--orange);
+    border-color: var(--orange);
+}
+
+.article__text {
+    display: block;
+    color: #909EAA;
+    font-weight: normal;
+    max-width: 90%;
+    padding-top: 15px;
+}
+
+time {
+    color: #909EAA;
+    font-size: 10px;
+}
+
+.instr .specialist-banner {
+    background-size: 200px 230px;
+}
+
+
+.instr .instructor-4,
+.instr .instructor-6,
+.instr .instructor-7,
+.instr .instructor-8,
+.instr .instructor-12,
+.instr .instructor-14,
+.instr .instructor-15,
+.instr .instructor-18,
+.instr .instructor-20,
+.instr .instructor-21,
+.instr .instructor-22,
+.instr .instructor-24,
+.instr .instructor-25,
+.instr .instructor-26,
+.instr .instructor-27,
+.instr .instructor-31,
+.instr .instructor-33,
+.instr .instructor-34,
+.instr .instructor-35,
+.instr .instructor-36,
+.spch .speech-therapist-1,
+.mnl .osteopath-1 {
+    background-size: 180px 230px; 
+}
+
+.instr .instructor-9,
+.instr .instructor-3,
+.instr .instructor-10,
+.instr .instructor-29,
+.instr .instructor-32,
+.instr .instructor-37,
+.instr .instructor-40,
+.instr .instructor-41,
+.instr .instructor-42 {
+    background-size: 230px 230px; 
+}
+
+.psh .psychologist-9,
+.spch .speech-therapist-4,
+.aba .aba-instructor-9 {
+    background-size: 200px 230px; 
+}
+
+.instr .instructor-13 {
+    background-size: 160px 230px;
+}

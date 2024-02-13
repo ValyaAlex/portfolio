@@ -1,0 +1,31 @@
+.video {
+    background-color: var(--bg-blue);
+    margin-bottom: 150px;
+    border-bottom: 1px solid var(--border);
+    -webkit-box-shadow: 0px 5px 10px var(--border);
+    box-shadow: 0px 5px 10px var(--border)
+}
+
+.video__title {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.video__video {
+    max-width: 60%;
+    border-radius: 10px;
+}
+
+.video-flex {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

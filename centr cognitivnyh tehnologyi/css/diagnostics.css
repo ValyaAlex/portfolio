@@ -1,0 +1,385 @@
+.diagnostics {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+}
+
+.diagnostics .bg {
+    background-image: url(../img/banner-diagnostics.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1245px;
+    top: 0;
+    opacity: .1;
+}
+
+.diagnostics__stage {
+    padding-left: 6.3em;
+    position: relative;
+    filter: grayscale(0);
+    color: #E2E7EC;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 100%;
+}
+
+.diagnostics__stage:not(:last-of-type)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 46px;
+    left: 10%;
+    bottom: 0;
+    width: 1px;
+    background: #E2E7EC;
+}
+
+.stage-order {
+    position: absolute;
+    left: 8%;
+    top: 0;
+    font-size: 26px;
+    line-height: 48px;
+    letter-spacing: .02em;
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.stage-progress {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    width: 2px;
+    height: 0;
+    background: var(--orange);
+    transition: height 3.5s;
+}
+
+.diagnostics__stage:last-of-type .stage-progress {
+    display: none;
+}
+
+.diagnostics .element-animation {
+    opacity: 0;
+    transform: translateY(0);
+    border: 2px solid #E1E4E7;
+    background: transparent;
+    color: #E1E4E7;
+}
+
+.diagnostics .element-animation.element-show {
+    opacity: 1;
+    border: 2px solid var(--orange);
+    background: var(--orange);
+    color: var(--white);
+    transition: all 1s;
+}
+
+.diagnostics .element-animation.element-show .stage-progress {
+    height: 180px;
+}
+
+.stage__text {
+    position: absolute;
+    left: 15%;
+    top: 10px;
+    max-width: 80%;
+}
+
+.stage__text.element-animation {
+    color: #E1E4E7;
+}
+
+.stage__text.element-animation.element-animation.element-show {
+    color: var(--gray);
+    transition: all 1s;
+    background: none;
+    border: none;
+}
+
+.diagnostics__stages {
+    margin-bottom: 40px;
+}
+
+.diagnostic__text {
+    margin-bottom: 40px;
+}
+
+.diagnostic__block .diagnostic__text {
+    margin-bottom: 0;
+}
+
+.diagnostic .title {
+    padding-top: 70px;
+}
+
+.diagnostic__block {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.diagnostic__img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.type__container,
+.type__container-autism,
+.psihodiagnostic__container {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.type--active,
+.type--active-autism,
+.psihodiagnostic--active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    animation: animate 0.5s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.type__btn,
+.type__btn-autism,
+.psihodiagnostic__btn {
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 15px;
+    transition: color .3s, background-color .3s;
+    cursor: pointer;
+    line-height: 25px;
+}
+
+.type__btn:hover,
+.type__btn-autism:hover,
+.psihodiagnostic__btn:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+
+.type__btn--active {
+    color: var(--white);
+    background-color: var(--hover-orange);
+}
+
+.type__list {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.types {
+    width: 49%;
+}
+
+.type,
+.psihodiagnostic__types {
+    background-color: var(--blue);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.type__link {
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
+    transition: color .3s;
+    display: inline-block;
+    width: fit-content;
+    padding-top: 20px;
+}
+
+.type__link:hover {
+    color: var(--hover-orange);
+}
+
+.autism .title {
+    padding-top: 50px;
+}
+
+
+.autism__types .diagnostic__block {
+    margin-bottom: 0;
+}
+
+.autism .diagnostic__block:nth-last-of-type(1) {
+    margin-bottom: 50px;
+}
+
+.autism .type__list {
+    width: 42%;
+}
+
+.autism .types {
+    width: 60%;
+}
+
+.autism__types {
+    padding: 50px 0;
+    background-color: var(--blue);
+}
+
+.psihodiagnostic,
+.sensory {
+    padding-top: 100px;
+}
+
+.psihodiagnostic__types .type__list {
+    width: 55%;
+}
+
+.psihodiagnostic__types .types {
+    width: 40%;
+}
+
+.sensory__symptom .title {
+    font-size: 25px;
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+
+.sensory .diagnostic__img,
+.psihodiagnostic .diagnostic__img,
+.autism .diagnostic__img {
+    width: 45%;
+}
+
+.sensory__symptom {
+    background-color: var(--bg-orange);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.sensory__symptom .diagnostic__text {
+    margin-bottom: 0;
+}
+
+.sensory__text {
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.sensory__test .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sensory__test {
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background-color: #f5e9fd;
+    text-align: center;
+    padding: 40px;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.test__list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.test__list .list__item {
+    background-color: var(--white);
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.sensory__icon-3 {
+    height: 70px;
+    width: 55px;
+    margin-bottom: 20px;
+}
+
+.sensory__icon-1 {
+    height: 40px;
+    width: 45px;
+    margin-bottom: 20px;
+}
+
+.sensory__icon-2 {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.about__list {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.about__list .list__item {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: rgba(255, 230, 184, 0.5);
+    border: 1px solid var(--border);
+}
+
+.list__item .item__title {
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+
+.test__about {
+    margin-bottom: 40px;
+}
+
+.back__link {
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.back__link::before {
+    content: url(../icon/back.png);
+    margin-right: 10px;
+}
+
+.width {
+    width: 50%;
+}

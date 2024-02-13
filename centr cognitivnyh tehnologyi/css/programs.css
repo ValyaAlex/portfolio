@@ -1,0 +1,205 @@
+.programs {
+    margin-bottom: 150px;
+}
+
+.programs__text {
+    margin-bottom: 40px;
+}
+
+.programs-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.programs-left,
+.programs-right {
+    width: 48%;
+}
+
+.programs__title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.radial-button {
+    --offsetX: 50%;
+    --offsetY: 50%;
+    --maxPercent: 100%;
+    display: block;
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 1rem 1rem;
+    appearance: none;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    background: radial-gradient(circle at var(--offsetX) var(--offsetY), var(--startColor) 0%, var(--endColor) var(--maxPercent));
+    text-align: center;
+    pointer-events: auto;
+}
+
+.indigo {
+    --startColor: rgb(173, 162, 231);
+    --endColor: rgb(173, 122, 207);
+}
+
+.violet {
+    --startColor: rgb(243, 169, 243);
+    --endColor: rgb(204, 139, 204);
+}
+
+.red {
+    --startColor: rgb(231, 147, 147);
+    --endColor: rgb(231, 115, 115);
+}
+
+.green {
+    --startColor: rgb(165, 226, 165);
+    --endColor: rgb(98, 218, 98);
+}
+
+.orange {
+    --startColor: rgb(236, 191, 107);
+    --endColor: rgb(247, 129, 60);
+}
+
+.yellow {
+    --startColor: rgb(240, 223, 129);
+    --endColor: rgb(224, 203, 106);
+}
+
+.blue {
+    --startColor: rgb(152, 188, 224);
+    --endColor: rgb(127, 127, 226);
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay,
+.modal-overlay-specialist,
+.modal-overlay-click {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(112, 124, 143, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    z-index: 20;
+    visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    overflow-y: scroll;
+}
+
+.modal,
+.modal-click {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 90px 60px 60px 60px;
+    height: 450px;
+    max-width: 800px;
+    top: 5%;
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: auto;
+    transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+    transition: transform .3s;
+}
+
+.modal-overlay--visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.modal.modal--visible {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    transform: perspective(600px) translate(0, 0%) rotateX(0deg);
+}
+
+.modal-click.modal--visible {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    transform: perspective(600px) translate(0, 0%) rotateX(0deg);
+}
+
+.modal__btn-close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.modal__close {
+    width: 20px;
+    height: 20px;
+}
+
+.modal-overlay__text {
+    max-width: 90%;
+    font-size: 16px;
+}
+
+.modal__more {
+    display: block;
+    color: var(--orange);
+    font-size: 16px;
+    border-bottom: 1px solid var(--orange);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.modal__list {
+    margin-bottom: 40px;
+}
+
+.modal__list .list__item {
+    font-size: 16px;
+}
+
+.modal__list .list__item::before {
+    content: "—";
+    margin-right: 10px;
+}
+
+.programs .page__text {
+    font-size: 16px;
+}
