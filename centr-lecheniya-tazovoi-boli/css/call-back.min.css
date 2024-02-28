@@ -1,7 +1,5 @@
 .call-back {
-    margin-bottom: 150px;
-    padding-bottom: 70px;
-    border-bottom: 1px solid var(--border)
+    margin-bottom: 60px;
 }
 
 .call-back__container {

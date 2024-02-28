@@ -40,10 +40,10 @@ closed.forEach(function (el) {
 })
 
 
-const specialistCard = document.querySelectorAll('.specialist__info');
+const specialistCard = document.querySelectorAll('.specialists__info');
 const modalOverlaySpecialist = document.querySelector('.modal-overlay-specialist');
 const modalsSpecialist = document.querySelectorAll('.modal-specialist');
-const closedSpecialist = document.querySelectorAll('.modal__close');
+const closedSpecialist = document.querySelectorAll('.modal-specialist__close-img');
 
 specialistCard.forEach((el) => {
   el.addEventListener('click', (e) => {

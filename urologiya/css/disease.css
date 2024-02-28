@@ -1,5 +1,5 @@
 .disease {
-    padding-top: 150px;
+    padding-top: 60px;
 }
 
 .disease__title {
@@ -129,13 +129,13 @@
     transform: perspective(600px) translate(0, 0%) rotateX(0deg);
 }
 
-.modal__btn-close {
+.modal__close {
     position: absolute;
     top: 50px;
     right: 50px;
 }
 
-.modal__close {
+.modal__close-img {
     width: 20px;
     height: 20px;
 }
@@ -159,7 +159,7 @@
     margin-bottom: 40px;
 }
 
-.modal__list .list__item::before {
+.modal__list .modal__item::before {
     content: "—";
     margin-right: 10px;
 }
@@ -213,9 +213,9 @@
 }
 
 .page-container h2 {
-    padding-top: 70px;
-    font-size: 28px;
-    margin-bottom: 40px;
+    padding-top: 60px;
+    font-size: 23px;
+    margin-bottom: 15px;
 }
 
 .page-container .modal-overlay__text {

@@ -1,5 +1,6 @@
 .disease {
-    margin-bottom: 150px
+    margin-bottom: 60px;
+    padding-top: 100px;
 }
 
 .disease__list {
@@ -130,14 +131,16 @@
     transform: perspective(600px) translate(0, 0) rotateX(0)
 }
 
-.modal__btn-close {
+.modal__btn-close,
+.modal-specialist__btn-close {
     position: absolute;
     top: 50px;
     right: 50px;
     margin-bottom: 40px
 }
 
-.modal__close {
+.modal__close,
+.modal-specialist__close-img {
     width: 20px;
     height: 20px
 }
@@ -196,7 +199,7 @@
 }
 
 .page__btn {
-    font-weight: 600;
+    font-size: 16px;
     background: var(--orange);
     padding: 20px 40px;
     border-radius: 6px;

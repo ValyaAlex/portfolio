@@ -46,7 +46,7 @@
 </head>
 
 <body>
-    <div class="responsive__overlay"></div>
+    <div class="responsive-overlay"></div>
     <header class="header">
         <div class="header__container">
             <button aria-label="Открыть меню" class="btn-reset burger">
@@ -56,10 +56,10 @@
                 </span>
             </button>
             <a href="https://www.ugmk-clinic.ru/" class="header__logo">
-                <img class="icon__logo-small" loading="lazy" alt="логотип 'УГМК - Здоровье'"
+                <img class="header__logo-small" loading="lazy" alt="логотип 'УГМК - Здоровье'"
                     src="/icon/icon_logo-320.webp">
 
-                <img class="icon__logo" loading="lazy" alt="логотип 'УГМК - Здоровье'"
+                <img class="header__logo-big" loading="lazy" alt="логотип 'УГМК - Здоровье'"
                     src="https://www.ugmk-clinic.ru/static/mobile_app/www/assets/images/logo.png">
             </a>
             <div class="header__nav">
@@ -70,9 +70,6 @@
                         </li>
                         <li class="nav__item">
                             <a href="#consultation" class="nav__link">Прием</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#procedure" class="nav__link">Процедуры</a>
                         </li>
                         <li class="nav__item">
                             <a href="#disease" class="nav__link">Деятельность направления</a>
@@ -124,29 +121,29 @@
                     К основному перечню проблем можно отнести:
                 </p>
                 <div class="problems__list">
-                    <div class="list__item item-left">
-                        <div class="item__icon">
-                            <img src="icon/acne.webp" alt="Акне иконка" loading="lazy" class="icon__img">
+                    <div class="problems__item item-left">
+                        <div class="problems__icon">
+                            <img src="icon/acne.webp" alt="Акне иконка" loading="lazy" class="problems__img">
                         </div>
-                        <p class="item__text">
+                        <p class="problems__text">
                             &laquo;Плохое&raquo; качество кожи (сухость или жирность кожи, шелушения, чувствительность,
                             покраснения и&nbsp;воспаления, постакне в&nbsp;виде застойных пятен и&nbsp;рубцов)
                         </p>
                     </div>
                     <div class="item-right">
-                        <div class="list__item">
-                            <div class="item__icon">
+                        <div class="problems__item">
+                            <div class="problems__icon">
                                 <img src="icon/skinregeneration.webp" alt="Старение иконка" loading="lazy">
                             </div>
-                            <p class="item__text">
+                            <p class="problems__text">
                                 Первые признаки старения
                             </p>
                         </div>
-                        <div class="list__item">
-                            <div class="item__icon">
+                        <div class="problems__item">
+                            <div class="problems__icon">
                                 <img src="icon/cellulite.webp" alt="Цулюлит иконка" loading="lazy">
                             </div>
-                            <p class="item__text">
+                            <p class="problems__text">
                                 Беспокоит целлюлит/дряблая кожа тела
                             </p>
                         </div>
@@ -166,7 +163,7 @@
                             <div class="stage-progress">
                             </div>
                         </div>
-                        <p class="stage__text stage__text-right element-animation">
+                        <p class="consultation__stage-text consultation__stage-right element-animation">
                             Знакомство, врач собирает первичный анамнез
                         </p>
                     </div>
@@ -176,17 +173,17 @@
                             <div class="stage-progress">
                             </div>
                         </div>
-                        <p class="stage__text stage__text-left element-animation">
+                        <p class="consultation__stage-text consultation__stage-left element-animation">
                             Осмотр кожного покрова: цвет, наличие шрамов, пятен, повреждений
                         </p>
                     </div>
-                    <div class="consultation__stage ">
+                    <div class="consultation__stage">
                         <div class="stage-order element-animation">
                             3
                             <div class="stage-progress">
                             </div>
                         </div>
-                        <p class="stage__text stage__text-right element-animation">
+                        <p class="consultation__stage-text consultation__stage-right element-animation">
                             Исследование кожи с&nbsp;помощью пальпации, оценивается на&nbsp;ощупь влажность, шелушение,
                             болевые точки
                         </p>
@@ -197,7 +194,7 @@
                             <div class="stage-progress">
                             </div>
                         </div>
-                        <p class="stage__text stage__text-left element-animation">
+                        <p class="consultation__stage-text consultation__stage-left element-animation">
                             Обследование аппаратами и&nbsp;инструментами.
                         </p>
                     </div>
@@ -446,115 +443,115 @@
                     Лечащие специалисты
                 </h2>
                 <div class="specialists__container">
-                    <div class="specialist__card specialist-1">
-                        <div class="specialist__info" data-path="vorobieva">
-                            <h3 class="specialist__name">
+                    <div class="specialists__card specialist-1">
+                        <div class="specialists__info" data-path="vorobieva">
+                            <h3 class="specialists__name">
                                 Воробьева Елена Валерьевна
                             </h3>
-                            <p class="specialist__profession">
+                            <p class="specialists__profession">
                                 Врач дерматовенеролог-косметолог
                             </p>
                         </div>
                         <div class="specialists__descr">
-                            <p class="specialist__consultation">
+                            <p class="specialists__consultation">
                                 Консультация
                             </p>
-                            <p class="specialist__price">
+                            <p class="specialists__price">
                                 от 2900 ₽
                             </p>
-                            <button class="btn-reset specialist__btn">
+                            <button class="btn-reset specialists__btn">
                                 Записаться
                             </button>
                         </div>
                     </div>
 
 
-                    <div class="specialist__card specialist-2">
-                        <div class="specialist__info" data-path="danilova">
-                            <h3 class="specialist__name">
+                    <div class="specialists__card specialist-2">
+                        <div class="specialists__info" data-path="danilova">
+                            <h3 class="specialists__name">
                                 Данилова Татьяна Владимировна
                             </h3>
-                            <p class="specialist__profession">
+                            <p class="specialists__profession">
                                 Врач-косметолог
                             </p>
                         </div>
                         <div class="specialists__descr">
-                            <p class="specialist__consultation">
+                            <p class="specialists__consultation">
                                 Консультация
                             </p>
-                            <p class="specialist__price">
+                            <p class="specialists__price">
                                 от 1400 ₽
                             </p>
-                            <button class="btn-reset specialist__btn">
+                            <button class="btn-reset specialists__btn">
                                 Записаться
                             </button>
                         </div>
                     </div>
 
-                    <div class="specialist__card specialist-3">
-                        <div class="specialist__info" data-path="kukartseva">
-                            <h3 class="specialist__name">
+                    <div class="specialists__card specialist-3">
+                        <div class="specialists__info" data-path="kukartseva">
+                            <h3 class="specialists__name">
                                 Кукарцева Наталья Владимировна
                             </h3>
-                            <p class="specialist__profession">
+                            <p class="specialists__profession">
                                 Врач-дерматовенеролог, косметолог
                             </p>
 
                         </div>
                         <div class="specialists__descr">
-                            <p class="specialist__consultation">
+                            <p class="specialists__consultation">
                                 Консультация
                             </p>
-                            <p class="specialist__price">
+                            <p class="specialists__price">
                                 от 1400 ₽
                             </p>
-                            <button class="btn-reset specialist__btn">
+                            <button class="btn-reset specialists__btn">
                                 Записаться
                             </button>
                         </div>
                     </div>
-                    <div class="specialist__card specialist-4">
-                        <div class="specialist__info" data-path="terehova">
-                            <h3 class="specialist__name">
+                    <div class="specialists__card specialist-4">
+                        <div class="specialists__info" data-path="terehova">
+                            <h3 class="specialists__name">
                                 Терехова Елена Викторовна
                             </h3>
-                            <p class="specialist__profession">
+                            <p class="specialists__profession">
                                 Врач-косметолог
                             </p>
 
                         </div>
                         <div class="specialists__descr">
-                            <p class="specialist__consultation">
+                            <p class="specialists__consultation">
                                 Консультация
                             </p>
-                            <p class="specialist__price">
+                            <p class="specialists__price">
                                 от 1400 ₽
                             </p>
-                            <button class="btn-reset specialist__btn">
+                            <button class="btn-reset specialists__btn">
                                 Записаться
                             </button>
                         </div>
                     </div>
 
 
-                    <div class="specialist__card specialist-5">
-                        <div class="specialist__info" data-path="tomilova">
-                            <h3 class="specialist__name">
+                    <div class="specialists__card specialist-5">
+                        <div class="specialists__info" data-path="tomilova">
+                            <h3 class="specialists__name">
                                 Томилова Екатерина Михайловна
                             </h3>
-                            <p class="specialist__profession">
+                            <p class="specialists__profession">
                                 Врач-косметолог
                             </p>
 
                         </div>
                         <div class="specialists__descr">
-                            <p class="specialist__consultation">
+                            <p class="specialists__consultation">
                                 Консультация
                             </p>
-                            <p class="specialist__price">
+                            <p class="specialists__price">
                                 от 1400 ₽
                             </p>
-                            <button class="btn-reset specialist__btn">
+                            <button class="btn-reset specialists__btn">
                                 Записаться
                             </button>
                         </div>
@@ -564,56 +561,56 @@
                 <div class="modals">
                     <div class="modal-overlay-specialist">
                         <div class="modal-specialist" data-target="vorobieva">
-                            <button class="btn-reset modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
+                            <button class="btn-reset modal-specialist__btn-close"><img loading="lazy"
+                                    src="./icon/modal-close.svg" alt="Закрыть окно" class="modal-specialist__close-img">
                             </button>
-                            <div class="specialist-banner specialist-1">
-                                <h4 class="specialist-banner__name">
+                            <div class="modal-specialist__banner specialist-1">
+                                <h4 class="modal-specialist__name">
                                     Воробьева Елена Валерьевна
                                 </h4>
-                                <p class="specialist-banner__profession">
+                                <p class="modal-specialist__profession">
                                     Врач дерматовенеролог-косметолог
                                 </p>
                             </div>
                             <div class="modal-specialist__content">
-                                <div class="specialist-banner_experience">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__experience">
+                                    <h5 class="modal-specialist__banner-title">
                                         Опыт работы
                                     </h5>
-                                    <ul class="list-reset experience__list">
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__experience-list">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 с 2022 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Косметолог, врач-дерматовенеролог клиники "УГМК-Здоровье", г.
                                                 Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 с 2020 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Сертифицированный тренер по инъекционным методам и химическим пилингам,
                                                 член
                                                 Национального общества мезотерапии, компании "Мартинекс", г.
                                                 Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2012-2023 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-дерматовенеролог медицинского центра "Шанс", г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2009-2012 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-дерматовенеролог Дорожной больницы на станции
                                                 Свердловск-Пассажирский,
                                                 г. Екатеринбург
@@ -622,127 +619,127 @@
                                     </ul>
                                 </div>
 
-                                <div class="specialist-banner__specialization">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__specialization">
+                                    <h5 class="modal-specialist__banner-title">
                                         Узкопрофильная специализация
                                     </h5>
-                                    <ul class="list-reset specialization__list">
-                                        <li class="specialization__item">
+                                    <ul class="list-reset modal-specialist__specialization-list">
+                                        <li class="modal-specialist__specialization-item">
                                             Дерматоскопия доброкачественных и злокачественных кожных образований
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Лазерное удаление, криодеструкция, радиоволновая деструкция новообразований
                                             кожи
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Применение высокотехнологических аппаратов ( в том числе лазерных) в
                                             коррекции
                                             возрастных изменений кожи
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Лечение кожных заболеваний
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Инъекционные методы коррекции и профилактики возрастных изменений кожи
                                         </li>
                                     </ul>
                                 </div>
 
 
-                                <div class="specialist-banner__training">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__training">
+                                    <h5 class="modal-specialist__banner-title">
                                         Обучение и квалификация
                                     </h5>
                                     <input type="checkbox" id="see__more-training-1">
 
-                                    <ul class="list-reset training__list">
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__training-list">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2002-2008 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Уральская государственная медицинская академия, лечебный факультет
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2008-2009 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Интернатура на кафедре кожных и венерических болезней, специальность
                                                 "Дерматовенерология", УГМА
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2009 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по терапевтической косметологии, УГМА
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2012 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Профессиональная переподготовка по косметологии, Уральский НИИ
                                                 дерматовенерологии и иммунопатологии
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2012 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации на цикле "Дерматоонкология с основами
                                                 дерматоскопии",
                                                 Уральский НИИ дерматовенерологии и иммунопатологии
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2014 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по специальности "Дерматовенерология", УГМУ
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2016 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации "Трихология", образовательный центр "Наутилус"
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2017 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по специальности "Косметология", Уральский НИИ
                                                 дерматовенерологии и иммунопатологии
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2019 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по специальности "Дерматовенерология", УГМУ
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2022 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по специальности "Косметология", УГМУ
                                             </p>
                                         </li>
                                     </ul>
-                                    <label class="training__btn" for="see__more-training-1">
+                                    <label class="modal-specialist__training-btn" for="see__more-training-1">
                                         <span class="unloaded">Посмотреть все</span>
                                         <span class="loaded">Скрыть</span>
                                     </label>
@@ -751,125 +748,125 @@
                         </div>
 
                         <div class="modal-specialist" data-target="danilova">
-                            <button class="btn-reset modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
+                            <button class="btn-reset modal-specialist__btn-close"><img loading="lazy"
+                                    src="./icon/modal-close.svg" alt="Закрыть окно" class="modal-specialist__close-img">
                             </button>
-                            <div class="specialist-banner specialist-2">
-                                <h4 class="specialist-banner__name">
+                            <div class="modal-specialist__banner specialist-2">
+                                <h4 class="modal-specialist__name">
                                     Данилова Татьяна Владимировна
                                 </h4>
-                                <p class="specialist-banner__profession">
+                                <p class="modal-specialist__profession">
                                     Врач-косметолог
                                 </p>
                             </div>
                             <div class="modal-specialist__content">
-                                <div class="specialist-banner_experience">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__experience">
+                                    <h5 class="modal-specialist__banner-title">
                                         Опыт работы
                                     </h5>
-                                    <ul class="list-reset experience__list">
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__experience-list">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 с 2022 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог клиники "УГМК-Здоровье", г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 с 2017 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог клиники лазерной косметологии "Луи де Флер", г.
                                                 Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2015-2017 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог Центра доктора Гаврилова, г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2015-2017 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог клиники косметологии "Оранж", г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2010-2015 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог клиники эстетической медицины "Med Beauty", г.
                                                 Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2005-2008 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог салона красоты "Симпатия", г. Екатеринбург
                                             </p>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="specialist-banner__training">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__training">
+                                    <h5 class="modal-specialist__banner-title">
                                         Обучение и квалификация
                                     </h5>
                                     <input type="checkbox" id="see__more-training-2">
 
-                                    <ul class="list-reset training__list">
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__training-list">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 1998-2004 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Уральская государственная медицинская академия, лечебный факультет
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2004-2005 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Интернатура на базе УГМА по специальности "Дерматовенерология"
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2005-2006 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Ординатура на базе УГМА по специальности "Косметология"
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2018 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Гендерные особенности лиц"
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2019 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Избранные вопросы эстетической медицины"
                                             </p>
                                         </li>
                                     </ul>
-                                    <label class="training__btn" for="see__more-training-2">
+                                    <label class="modal-specialist__training-btn" for="see__more-training-2">
                                         <span class="unloaded">Посмотреть все</span>
                                         <span class="loaded">Скрыть</span>
                                     </label>
@@ -878,125 +875,125 @@
                         </div>
 
                         <div class="modal-specialist" data-target="kukartseva">
-                            <button class="btn-reset modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
+                            <button class="btn-reset modal-specialist__btn-close"><img loading="lazy"
+                                    src="./icon/modal-close.svg" alt="Закрыть окно" class="modal-specialist__close-img">
                             </button>
-                            <div class="specialist-banner specialist-3">
-                                <h4 class="specialist-banner__name">
+                            <div class="modal-specialist__banner specialist-3">
+                                <h4 class="modal-specialist__name">
                                     Кукарцева Наталья Владимировна
                                 </h4>
-                                <p class="specialist-banner__profession">
+                                <p class="modal-specialist__profession">
                                     Врач-дерматовенеролог, косметолог
                                 </p>
                             </div>
                             <div class="modal-specialist__content">
-                                <div class="specialist-banner_experience">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__experience">
+                                    <h5 class="modal-specialist__banner-title">
                                         Опыт работы
                                     </h5>
-                                    <ul class="list-reset experience__list">
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__experience-list">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 с 2023 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-дерматовенеролог, косметолог клиники "УГМК-Здоровье". г.
                                                 Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 с 2020 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-дерматовенеролог, косметолог клиники эстетической медицины
                                                 "Академи",
                                                 г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2017-2020 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-дерматовенеролог, косметолог медицинского центра "Гармония", г.
                                                 Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2011-2017 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-дерматовенеролог Медико-санитарной части №70,г. Екатеринбург
                                             </p>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="specialist-banner__training">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__training">
+                                    <h5 class="modal-specialist__banner-title">
                                         Обучение и квалификация
                                     </h5>
                                     <input type="checkbox" id="see__more-training-3">
-                                    <ul class="list-reset training__list">
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__training-list">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2003-2009 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Уральская государственная медицинская академия, лечебный факультет
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2009-2011 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Ординатура по специальности "Дерматовенерология" на базе УГМА
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2011 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 ППрофессиональная переподготовка по специальности "Косметология" на базе
                                                 Уральского научно-исследовательского института дерматовенерологии и
                                                 иммунопатологии
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2012 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Дерматоонкология с основами
                                                 дерматоскопии",
                                                 УрНИИДВиИ
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2012 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Профпатология" на базе УГМА
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2016 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Дерматовенерология" на базе УГМУ
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2016 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Репродуктивная эндокринология и
                                                 ожирение" на
                                                 базе Московского областного научно-исследовательского клинического
@@ -1004,44 +1001,44 @@
                                                 имени М. Ф. Владимирского
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2017 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Косметология" на базе Уральского
                                                 научно-исследовательского института дерматовенерологии и иммунопатологии
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2019 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Нутриэстетика и бьюти-метаболомика" на
                                                 базе
                                                 "Превентейдж"
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2021 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Дерматовенерология" на базе УГМУ
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2022 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Косметология" на базе "Медицина и
                                                 качество"
                                             </p>
                                         </li>
                                     </ul>
-                                    <label class="training__btn" for="see__more-training-3">
+                                    <label class="modal-specialist__training-btn" for="see__more-training-3">
                                         <span class="unloaded">Посмотреть все</span>
                                         <span class="loaded">Скрыть</span>
                                     </label>
@@ -1050,55 +1047,55 @@
                         </div>
 
                         <div class="modal-specialist" data-target="terehova">
-                            <button class="btn-reset modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
+                            <button class="btn-reset modal-specialist__btn-close"><img loading="lazy"
+                                    src="./icon/modal-close.svg" alt="Закрыть окно" class="modal-specialist__close-img">
                             </button>
-                            <div class="specialist-banner specialist-4">
-                                <h4 class="specialist-banner__name">
+                            <div class="modal-specialist__banner specialist-4">
+                                <h4 class="modal-specialist__name">
                                     Терехова Елена Викторовна
                                 </h4>
-                                <p class="specialist-banner__profession">
+                                <p class="modal-specialist__profession">
                                     Врач-косметолог
                                 </p>
                             </div>
                             <div class="modal-specialist__content">
-                                <div class="specialist-banner_experience">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__experience">
+                                    <h5 class="modal-specialist__banner-title">
                                         Опыт работы
                                     </h5>
-                                    <ul class="list-reset experience__list">
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__experience-list">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 с 2023 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог клиники "УГМК-Здоровье", г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2022-2023 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-дерматолог, косметолог центра современной медицины "World Spa
                                                 Clinic",
                                                 г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2008-2022 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-дерматолог, косметолог клиник лазерной косметологии "Линлайн", г.
                                                 Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2006-2007 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-акушер-гинеколог Центра планирования семьи и репродукции, г.
                                                 Екатеринбург
                                             </p>
@@ -1106,82 +1103,82 @@
                                     </ul>
                                 </div>
 
-                                <div class="specialist-banner__specialization">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__specialization">
+                                    <h5 class="modal-specialist__banner-title">
                                         Узкопрофильная специализация
                                     </h5>
-                                    <ul class="list-reset specialization__list">
-                                        <li class="specialization__item">
+                                    <ul class="list-reset modal-specialist__specialization-list">
+                                        <li class="modal-specialist__specialization-item">
                                             Мезотерапия лица и волосистой части головы
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Биоревитализация
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Иньекционная контурная пластика (носогубные складки, губы, скулы, овал лица,
                                             подбородок)
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Ботулинотерапия full face (диспорт, релатокс, миотокс)
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Инъекции препаратов коллагена - микроколлост, нития
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Инъекции препаратов полимолочной кислоты ( эстефил, скульптра)
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Пилинги, чистки, маски
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Фотоомоложение и фототерапия на аппарате М22 (удаление пигмента и
                                             расширенных
                                             сосудов, повышение тонуса кожи, сужение пор, осветления застойных пятен)
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Фракционное неабляционное омоложение на аппарате М22 (омоложение, осветление
                                             пигментации, сужение пор, повышние тонуса кожи, коррекция рубцов на лице и
                                             теле,
                                             в том числе постакне и растяжек)
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Лазерное удаление сосудов на аппарате М22 (расширенные мелкие сосуды на теле
                                             и
                                             конечностях)
                                         </li>
-                                        <li class="specialization__item">
+                                        <li class="modal-specialist__specialization-item">
                                             Удаление доброкачественных новообразований на аппарате "Фотек"
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="specialist-banner__training">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__training">
+                                    <h5 class="modal-specialist__banner-title">
                                         Обучение и квалификация
                                     </h5>
-                                    <ul class="list-reset training__list">
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__training-list">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 1999-2005 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Уральская государственная медицинская академия, лечебный факультет
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2005-2006 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Интернатура по специальности "Акушерство и гинекология" на базе УГМУ, г.
                                                 Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2006-2007 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Профессиональная переподготовка по специальности "Дерматовенерология" на
                                                 базе УГМУ, г. Екатеринбург
                                             </p>
@@ -1192,61 +1189,61 @@
                         </div>
 
                         <div class="modal-specialist" data-target="tomilova">
-                            <button class="btn-reset modal__btn-close"><img loading="lazy" src="./icon/modal-close.svg"
-                                    alt="Закрыть окно" class="modal__close">
+                            <button class="btn-reset modal-specialist__btn-close"><img loading="lazy"
+                                    src="./icon/modal-close.svg" alt="Закрыть окно" class="modal-specialist__close-img">
                             </button>
-                            <div class="specialist-banner specialist-5">
-                                <h4 class="specialist-banner__name">
+                            <div class="modal-specialist__banner specialist-5">
+                                <h4 class="modal-specialist__name">
                                     Томилова Екатерина Михайловна
                                 </h4>
-                                <p class="specialist-banner__profession">
+                                <p class="modal-specialist__profession">
                                     Врач-косметолог
                                 </p>
                             </div>
                             <div class="modal-specialist__content">
-                                <div class="specialist-banner_experience">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__experience">
+                                    <h5 class="modal-specialist__banner-title">
                                         Опыт работы
                                     </h5>
-                                    <ul class="list-reset experience__list">
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__experience-list">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 с 2023 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог клиники "УГМК-Здоровье", г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 с 2015 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог клиники лазерной косметологии "Луи де Флер", г.
                                                 Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2014-2015 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог салона красоты "Эдем", г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2011-2014 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-косметолог косметологической клиники "Шанталь", г. Екатеринбург
                                             </p>
                                         </li>
-                                        <li class="experience__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__experience-item">
+                                            <p class="modal-specialist__item-title">
                                                 2007-2010 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Врач-психиатр Свердловской областной клинической психиатрической
                                                 больницы,
                                                 г. Екатеринбург
@@ -1255,65 +1252,65 @@
                                     </ul>
                                 </div>
 
-                                <div class="specialist-banner__training">
-                                    <h5 class="banner__title">
+                                <div class="modal-specialist__training">
+                                    <h5 class="modal-specialist__banner-title">
                                         Обучение и квалификация
                                     </h5>
                                     <input type="checkbox" id="see__more-training-4">
-                                    <ul class="list-reset training__list">
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                    <ul class="list-reset modal-specialist__training-list">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 1999-2005 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Ярославская Государственная Медицинская академия, лечебный факультет
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2005-2007 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Ординатура по специальности "Психиатрия" на базе Медицинской академии
                                                 последипломного образования
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2010-2012 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Ординатура по специальности "Косметология" на базе Уральского
                                                 государственного медицинского университета
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2013-2014 гг.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Интернатура по специальности "Дерматовенерология" на базе УГМА
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2019 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Дерматовенерология"
                                             </p>
                                         </li>
-                                        <li class="training__item">
-                                            <p class="item__title">
+                                        <li class="modal-specialist__training-item">
+                                            <p class="modal-specialist__item-title">
                                                 2023 г.
                                             </p>
-                                            <p class="item__descr">
+                                            <p class="modal-specialist__item-descr">
                                                 Повышение квалификации по теме "Косметология"
                                             </p>
                                         </li>
                                     </ul>
 
-                                    <label class="training__btn" for="see__more-training-4">
+                                    <label class="modal-specialist__training-btn" for="see__more-training-4">
                                         <span class="unloaded">Посмотреть все</span>
                                         <span class="loaded">Скрыть</span>
                                     </label>
@@ -1328,7 +1325,7 @@
                         Наши специалисты ответят на&nbsp;любой ваш вопрос.
                         Оставьте заявку, и&nbsp;мы&nbsp;вам перезвоним.
                     </p>
-                    <button class="btn-reset call-back__btn">
+                    <button class="btn-reset specialists__call-btn">
                         Перезвоните мне
                     </button>
                 </div>
@@ -1502,10 +1499,8 @@
                         Написать нам
                     </a>
                 </div>
-                <div class="map__block">
-                    <div class="map__wrapper">
-                        <div class="map" id="map">
-                        </div>
+                <div class="contacts__map">
+                    <div class="map" id="map">
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 .questions {
-    margin-bottom: 100px
+    margin-bottom: 100px;
+    display: none;
 }
 
 .questions__list .ac {

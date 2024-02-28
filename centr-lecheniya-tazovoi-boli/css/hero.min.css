@@ -1,49 +1,74 @@
 .hero {
-    background-image: url(../img/banner.webp);
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.swiper-hero {
+    height: 600px;
+    width: 100%;
     background-color: var(--bg-blue);
+}
+
+.swiper-hero .swiper-slide { 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 0;
-    padding-top: 220px;
-    box-shadow: 0 5px 10px var(--border);
-    position: relative
+    background-position: center top 65%;
+    height: 750px;
 }
 
-.hero::after {
-    content: url(../img/specialists-banner.webp);
+.hero-slide-1 {
+    background-image: url(../img/hero-slide1.webp);
+}
+
+.hero-slide-2 {
+    background-image: url(../img/hero-slide2.webp);
+}
+
+.hero-slide-3 {
+    background-image: url(../img/hero-slide3.webp);
+}
+
+.hero-slide-4 {
+    background-image: url(../img/hero-slide4.webp);
+}
+
+.swiper-hero>.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-hero .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    display: none;
+}
+
+.hero__block {
     position: absolute;
-    bottom: -11px;
-    right: 10px
-}
-
-.hero .container {
-    position: relative;
-    z-index: 1
+    top: 150px;
+    z-index: 2;
 }
 
 .hero__title {
     display: inline-block;
-    font-weight: 600;
-    font-size: 2.6em;
+    font-weight: 500;
+    font-size: 33px;
     color: var(--black);
     width: 620px;
     margin-bottom: 20px;
-    line-height: 70px
+    line-height: 32px
 }
 
 .hero__text {
     width: 600px;
-    font-size: 20px;
-    margin-bottom: 70px;
-    line-height: 35px;
+    margin-bottom: 60px;
     color: var(--black)
+}
+
+.hero__descr {
+    font-size: 18px;
+    color: #99A4AC;
 }
 
 .hero__btn {
     display: inline-block;
     position: relative;
-    padding: 0 20px;
-    line-height: 45px;
+    padding: 15px 20px;
     background: var(--orange);
     border: 1px solid var(--orange);
     border-radius: 6px;
@@ -56,9 +81,18 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-bottom: 220px
 }
 
 .hero__btn:hover {
     background: var(--hover-orange)
+}
+
+.gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.84) 25.1%, rgba(255, 255, 255, 0) 65.7%);
+    z-index: 1;
 }

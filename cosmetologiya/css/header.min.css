@@ -20,12 +20,12 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-line-pack: center;
-    align-content: center;
+    align-items: center;
     padding: 20px 40px
 }
 
 .burger,
-.icon__logo-small {
+.header__logo-small {
     display: none
 }
 
@@ -47,9 +47,10 @@
     display: flex
 }
 
-.nav__item {
+.nav__list .nav__item {
     padding: 0 30px;
-    font-size: 16px
+    font-size: 16px;
+    margin: 0;
 }
 
 .nav__link {

@@ -7,7 +7,7 @@
     gap: 20px;
 }
 
-.list__item {
+.problems__item {
     background-color: var(--white);
     padding: 40px;
     border-radius: 20px;
@@ -29,18 +29,18 @@
     width: 49%;
 }
 
-.item__icon {
+.problems__icon {
     width: 70px;
     height: 70px;
     margin-bottom: 40px;
 }
 
-.icon__img {
+.problems__img {
     width: 80px;
     height: 80px;
 }
 
-.item__text {
+.problems__text {
     text-align: center;
     user-select: none;
 }

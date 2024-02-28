@@ -1,7 +1,7 @@
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.header__nav');
 let menuLinks = menu.querySelectorAll('.nav__link')
-let responsiveOverlay = document.querySelector('.responsive__overlay')
+let responsiveOverlay = document.querySelector('.responsive-overlay')
 
 burger.addEventListener('click', function () {
 

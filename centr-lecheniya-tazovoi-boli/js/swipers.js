@@ -1,4 +1,63 @@
-const swiper = new Swiper(".swiper", {
+const swiperHero = new Swiper(".swiper-hero", {
+    direction: "horizontal",
+    autoplay: true,
+    loop: true,
+  
+    autoplay: {
+      delay: 5000
+    },
+  
+    slideNext: {
+      runCallbacks: false,
+    },
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false
+    },
+  
+  
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  
+    a11y: {
+      paginationBulletMessage: 'Перейти к слайду {{index}}'
+    },
+  });
+
+const swiperPhoto = new Swiper(".swiper-photo", {
+    direction: "horizontal",
+    autoplay: true,
+    loop: true,
+  
+    autoplay: {
+      delay: 3000
+    },
+  
+    slideNext: {
+      runCallbacks: false,
+    },
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false
+    },
+  
+  
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  
+    a11y: {
+      paginationBulletMessage: 'Перейти к слайду {{index}}'
+    },
+  });
+
+
+const swiper = new Swiper(".swiper-symptoms", {
     direction: "horizontal",
     loop: false,
     slidesPerView: 1,
@@ -35,7 +94,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 
-const swiper2 = new Swiper(".swiper-info", {
+const swiperInfo = new Swiper(".swiper-info", {
     direction: "vertical",
     loop: false,
     slidesPerView: 2,
@@ -79,12 +138,6 @@ const swiper2 = new Swiper(".swiper-info", {
             slidesPerGroup: 2,
             spaceBetween: 40,
             pagination: false
-            /* {
-                el: ".swiper-pagination",
-                type: "bullets",
-                clickable: true
-              },*/
         }
     }
 });
-

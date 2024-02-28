@@ -20,7 +20,7 @@
     padding: 20px 40px;
 }
 
-.icon__logo-small {
+.header__logo-small {
     display: none;
 }
 
@@ -48,10 +48,11 @@
     display: flex;
 }
 
-.nav__item {
+.nav__list .nav__item {
     padding: 0 30px;
     font-size: 16px;
     white-space: nowrap;
+    margin: 0;
 }
 
 .nav__link {

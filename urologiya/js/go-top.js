@@ -6,7 +6,7 @@ goTopBtn.addEventListener("click", goTop);
 
 function trackScroll() {
   const scrolled = window.scrollY;
-  const coords = document.documentElement.clientHeight;
+  const coords = document.documentElement.clientHeight - 200;
   if (scrolled > coords) {
     goTopBtn.classList.add("go-top--show");
     headerBtn.classList.add('header__btn--active');

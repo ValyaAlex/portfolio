@@ -14,12 +14,11 @@
 }
 
 .methods {
-    padding-top: 100px;
+    padding-top: 120px;
     background-image: url(../img/methods.webp);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
-    margin-bottom: 150px
 }
 
 .methods__container {
@@ -30,7 +29,7 @@
 .methods__list {
     width: 49%;
     margin-right: 20px;
-    margin-bottom: 70px
+    margin-bottom: 60px
 }
 
 .methods__link {
@@ -109,9 +108,9 @@
 }
 
 .page__btn {
-    font-weight: 600;
     background: var(--orange);
     padding: 20px 40px;
     border-radius: 6px;
-    transition: background-color .3s
+    transition: background-color .3s;
+    font-size: 16px;
 }

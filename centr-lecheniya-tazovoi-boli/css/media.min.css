@@ -3,6 +3,11 @@
     width: 90%
   }
 
+  .hero__block {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .hero__title {
     width: 790px
   }
@@ -11,12 +16,8 @@
     width: calc((100% / 4) - 20px)
   }
 
-  .symptom__list {
+  .symptoms-swiper__list {
     padding: 50px 30px 50px 42%
-  }
-
-  .hero::after {
-    content: ''
   }
 
   .advantages__item::before {
@@ -39,20 +40,41 @@
     padding: 0 20px
   }
 
-  .hero__title {
-    width: 750px
+  .hero__block {
+    top: 100px;
+  }
+
+  .swiper-hero {
+    height: 600px;
+  }
+
+  .swiper-hero .swiper-slide {
+    height: 600px;
+  }
+
+  .hero__text {
+    width: 500px;
+    margin-bottom: 50px;
+  }
+
+  .swiper-photo .swiper-slide {
+    height: 400px;
+  }
+
+  .swiper-photo {
+    height: 400px;
   }
 
   .symptoms-title {
     padding: 70px
   }
 
-  .symptoms__title {
+  .symptoms-swiper__title {
     font-size: 25px;
     line-height: 30px
   }
 
-  .symptom__list {
+  .symptoms-swiper__list {
     padding: 50px 30px 50px 25%
   }
 
@@ -120,17 +142,17 @@
     max-width: 60%
   }
 
-  .specialist__card {
+  .specialists__card {
     background-size: 300px 300px
   }
 
-  .specialist__info,
+  .specialists__info,
   .specialists__descr {
     padding: 40px
   }
 
-  .specialist__consultation,
-  .specialist__profession {
+  .specialists__consultation,
+  .specialists__profession {
     max-width: 150px
   }
 
@@ -154,13 +176,13 @@
     background-image: url(../img/slide5-768.webp)
   }
 
-  .video__title {
+  .video__title, .photo__title {
     padding-left: 0;
     font-size: 25px;
   }
 }
 
-@media (max-width:905px) {
+@media (max-width:940px) {
 
   .header__nav,
   .nav .nav__list {
@@ -246,15 +268,15 @@
 
   .burger--active .burger__line {
     background-color: var(--orange);
-    -webkit-transform: rotate(45deg) translateY(5px);
-    -ms-transform: rotate(45deg) translateY(5px);
-    transform: rotate(45deg) translateY(5px)
+    -webkit-transform: rotate(45deg) translateY(5.5px);
+    -ms-transform: rotate(45deg) translateY(5.5px);
+    transform: rotate(45deg) translateY(5.5px)
   }
 
   .burger--active .burger__line:nth-child(2) {
-    -webkit-transform: rotate(-45deg) translateY(-5px);
-    -ms-transform: rotate(-45deg) translateY(-5px);
-    transform: rotate(-45deg) translateY(-5px)
+    -webkit-transform: rotate(-45deg) translateY(-5.5px);
+    -ms-transform: rotate(-45deg) translateY(-5.5px);
+    transform: rotate(-45deg) translateY(-5.5px)
   }
 
   .burger::after {
@@ -293,7 +315,8 @@
   }
 
   .advantages__item::before {
-    clip-path: circle(3% at 10% 26%)
+    display: block;
+    clip-path: circle(3% at 10% 28%)
   }
 
   .hero__btn,
@@ -301,26 +324,70 @@
     font-size: 16px
   }
 
+  .swiper-hero .swiper-slide {
+    height: 400px;
+  }
+
+  .swiper-hero {
+    height: 400px;
+  }
+
+  .swiper-hero {
+    height: 400px;
+    width: 100%;
+    background-color: var(--bg-blue);
+  }
+
   .hero__title {
-    font-size: 2.6em;
-    width: 600px
+    font-size: 1.5em;
+    line-height: 40px;
+  }
+
+  .hero__text {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    padding-top: 70px;
+  }
+
+  .symptoms-swiper {
+    margin: 0 auto 40px;
+  }
+
+  .symptoms-swiper__diagnoses-title {
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .title,
+  .call-back__title,
+  .contacts__title,
+  .container-disease-title,
+  .video__title, .photo__title {
+    font-size: 20px;
+  }
+
+  .swiper-photo .swiper-slide,
+  .swiper-photo {
+    height: 300px;
   }
 
   .about__text,
   .advantages__item-title__text,
   .hero__text,
   .methods__link,
-  .symptoms__if-text {
-    font-size: 18px
+  .symptoms-swiper__if-text {
+    font-size: 16px
   }
 
   .advantages__item-title {
     margin-bottom: 0
   }
 
-  .symptoms .swiper {
-    padding-bottom: 50px;
-    width: 100%
+  .symptoms-swiper .swiper-symptoms {
+    width: 100%;
   }
 
   .swiper .swiper-pagination {
@@ -337,16 +404,12 @@
     height: 10px
   }
 
-  .symptom__list {
-    padding: 50px 30px 50px 15%
+  .symptoms-swiper .swiper-button-next, .symptoms-swiper .swiper-button-prev {
+  display: none;
   }
 
-  .title,
-  .call-back__title,
-  .contacts__title,
-  .container-disease-title,
-  .video__title {
-    font-size: 25px
+  .symptoms-swiper__list {
+    padding: 50px 30px 50px 15%
   }
 
   .call-back__container,
@@ -361,6 +424,15 @@
     max-width: 100%
   }
 
+  .contacts {
+    padding-top: 0;
+  }
+
+  .hero__btn,
+  body {
+    font-size: 14px;
+  }
+
   .call-back__text {
     flex-basis: 100%;
     padding-top: 0;
@@ -373,11 +445,11 @@
   }
 
   .header__btn,
-  .call-back__btn {
+  .call-back__btn, .specialists__call-btn {
     font-size: 16px
   }
 
-  .call-back__btn {
+  .call-back__btn, .specialists__call-btn {
     padding: 16px 30px;
   }
 
@@ -405,6 +477,10 @@
     line-height: 25px
   }
 
+  .info__item-title {
+    font-size: 18px;
+}
+
   .info .swiper-button-next,
   .info .swiper-button-prev {
     left: 47%
@@ -424,7 +500,7 @@
     gap: 20px
   }
 
-  .specialist__card {
+  .specialists__card {
     flex-basis: calc(50% - 10px);
     background-position: right -35px bottom;
     background-size: 230px 230px;
@@ -437,8 +513,12 @@
   }
 
   .ac .ac-header {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px
+  }
+
+  .ac .ac-panel .ac-text {
+    font-size: 16px;
   }
 
   .contacts-info {
@@ -451,12 +531,12 @@
     display: none
   }
 
-  .specialist-banner {
+  .modal-specialist__banner{
     padding: 70px 70px 50px 50px
   }
 
-  .specialist-banner__name,
-  .specialist-banner__profession {
+  .modal-specialist__name,
+  .modal-specialist__profession {
     max-width: 46%
   }
 
@@ -464,7 +544,7 @@
     padding: 70px 40px 70px 50px
   }
 
-  .video__title {
+  .video__title, .photo__title {
     max-width: 30%;
   }
 
@@ -473,46 +553,63 @@
   }
 }
 
-@media (max-width:720px) {
+@media (max-width:770px) {
   .header__container {
     padding: 10px;
   }
 
-  .hero {
-    padding-top: 100px
+  .hero__title {
+    line-height: 30px;
+}
+
+  .header__nav {
+    top: 80px;
   }
 
-  .hero__btn {
-    margin-bottom: 100px
-  }
-
-  .diagnoses__list,
+  .symptoms-swiper__diagnoses-list,
   .hero__title,
   .methods__list {
     width: 100%
   }
 
-  .hero .container {
-    text-align: center
-  }
-
-  .hero__text {
-    width: 100%;
-    line-height: 30px
+  .hero__block {
+    width: 70%;
+    top: 75px;
   }
 
   .advantages__item::before {
-    clip-path: circle(3% at 15% 22%)
+    display: none;
   }
 
-  .symptom__diagnoses-title,
-  .symptoms__title {
+  .info__text-title {
+    font-size: 18px;
+  }
+
+  .info__title {
+    font-size: 25px;
+  }
+
+  .call-back__title {
+    margin-bottom: 40px;
+  }
+
+  .call-back__descr {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .call-back {
+    margin-bottom: 70px;
+  }
+
+  .symptoms-swiper__diagnoses-title,
+  .symptoms-swiper__title {
     font-size: 20px;
     font-weight: 500
   }
 
   .contacts-container,
-  .diagnoses__lists {
+  .symptoms-swiper__diagnoses-lists {
     flex-direction: column
   }
 
@@ -520,7 +617,7 @@
     width: calc((100% / 3) - 20px)
   }
 
-  .specialist__card {
+  .specialists__card {
     flex-basis: 100%;
     height: 300px;
     min-height: 100%;
@@ -528,20 +625,32 @@
     background-size: 250px 250px
   }
 
-  .specialist__info,
+  .specialists__info,
   .specialists__descr {
     padding: 0
   }
 
-  .specialist__name {
+  .photo-flex {
+    flex-direction: column;
+}
+
+.video__title, .photo__title {
+  line-height: 32px;
+  max-width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-right: 0;
+}
+
+  .specialists__name {
     max-width: 100%
   }
 
-  .specialist__profession {
+  .specialists__profession {
     max-width: 70%
   }
 
-  .specialist__price {
+  .specialists__price {
     margin-bottom: 10px
   }
 
@@ -565,7 +674,7 @@
   }
 
   .specialists__call,
-  .symptoms__if {
+  .symptoms-swiper__if {
     padding: 20px
   }
 
@@ -585,7 +694,8 @@
     margin-bottom: 20px
   }
 
-  section {
+  section,
+  .hero__block {
     padding-left: 20px;
     padding-right: 20px
   }
@@ -600,7 +710,20 @@
     font-size: 14px
   }
 
-  .specialist-banner {
+  .modal-specialist__name,
+  .modal-specialist__profession {
+    max-width: 45%;
+  }
+
+  .modal-specialist__name {
+    font-size: 20px;
+  }
+
+  .modal-specialist__banner-title {
+    font-size: 18px;
+  }
+
+  .modal-specialist__banner{
     background-position: right 40px bottom
   }
 
@@ -615,13 +738,6 @@
 
   .video-container {
     flex-direction: column;
-  }
-
-  .video__title {
-    max-width: 100%;
-    margin-right: 0px;
-    margin-bottom: 20px;
-    text-align: center;
   }
 
   .video__video {
@@ -646,10 +762,14 @@
   .about__text,
   .advantages__item-title__text,
   .hero__text,
-  .symptoms__if-text {
+  .symptoms-swiper__if-text {
     font-size: 14px;
     line-height: 30px
   }
+
+  .hero__descr {
+    font-size: 14px;
+}
 
   .hero__title {
     line-height: 30px;
@@ -657,9 +777,9 @@
   }
 
   .title,
-  .symptom__diagnoses-title,
+  .symptoms-swiper__diagnoses-title,
   .info__title,
-  .video__title,
+  .video__title, .photo__title,
   .info__text-title {
     margin-bottom: 20px;
     font-size: 20px;
@@ -671,35 +791,57 @@
   .methods__link,
   .popup-mobile,
   .popup__text,
-  .symptom__title,
+  .symptoms-swiper__symptom-title,
   body,
   .header__btn,
-  .call-back__btn {
+  .call-back__btn, .specialists__call-btn {
     font-size: 14px
   }
 
-  .call-back__btn {
+  .call-back__btn, .specialists__call-btn {
     padding: 14px 30px;
   }
 
-  .icon__logo {
+  .header__logo-big {
     display: none
   }
 
-  .icon__logo-small {
+  .header__logo-small {
     display: block;
     width: 70px;
     height: 70px
   }
 
-  .hero {
-    background-color: var(--bg-orange);
-    padding-top: 120px
+  .photo-flex {
+    flex-direction: column;
   }
 
-  .hero__btn {
-    margin-bottom: 100px;
-    line-height: 40px
+  .photo .video__title, .photo__title {
+    width: 100%;
+  }
+
+  .swiper-photo {
+    width: 100%;
+  }
+
+  .hero__block {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 90px;
+  }
+
+  .hero__text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .swiper-hero .swiper-slide {
+    background-position: right -70px top 35%;
+  }
+
+  .symptoms-swiper__if-btn {
+    font-size: 14px;
   }
 
   .advantages__item,
@@ -707,28 +849,16 @@
     padding: 20px
   }
 
-  .symptom__list {
+  .symptoms-swiper__list {
     padding: 40px 10px 10px 10%
   }
 
-  .symptom__title {
+  .symptoms-swiper__symptom-title {
     margin-bottom: 10px;
     line-height: 30px
   }
 
-  .call-back,
-  .disease,
-  .info,
-  .methods,
-  .specialists,
-  .symptom__diagnoses,
-  .symptoms-swiper,
-  .symptoms__if,
-  .video {
-    margin-bottom: 60px
-  }
-
-  .symptoms__item {
+  .symptoms-swiper__item {
     line-height: 25px
   }
 
@@ -755,7 +885,7 @@
     width: 100%
   }
 
-  .specialist__card {
+  .specialists__card {
     height: 350px;
     padding: 20px;
     background-size: 200px 200px
@@ -799,22 +929,22 @@
     font-size: 13px
   }
 
-  .specialist-banner__name {
+  .modal-specialist__name {
     font-size: 20px;
     margin-bottom: 10px;
     line-height: 25px
   }
 
-  .banner__title {
+  .modal-specialist__banner-title {
     font-size: 20px
   }
 
-  .specialist-banner {
+  .modal-specialist__banner{
     padding: 40px 20px 20px 30px;
     background-size: 150px 150px
   }
 
-  .modal__btn-close {
+  .modal-specialist__btn-close {
     top: 20px;
     right: 20px
   }
@@ -824,8 +954,8 @@
   }
 
   .disease__page-title {
-    font-size: 25px;
-    padding: 25px
+    font-size: 20px;
+    padding: 10px
   }
 
   ol {
@@ -833,15 +963,24 @@
   }
 
   .page-container {
-    padding: 30px
+    padding: 0px
   }
 
   .modal-specialist.modal--visible {
     top: 0
   }
+
+  .methods__page-title {
+    font-size: 20px;
+    padding: 10px;
+}
 }
 
 @media (max-width:403px) {
+  .hero__block {
+    top: 30px;
+}
+
   .popup__text {
     min-height: 140px;
     width: 200px;
@@ -861,32 +1000,32 @@
     left: 100px
   }
 
-  .specialist-banner {
+  .modal-specialist__banner{
     background-position: right 25px bottom
   }
 
-  .specialist-banner__name {
+  .modal-specialist__name {
     font-size: 16px;
     line-height: 20px
   }
 
-  .specialist-banner__profession {
+  .modal-specialist__profession {
     font-size: 12px;
     line-height: 16px
   }
 
-  .banner__title {
+  .modal-specialist__banner-title {
     font-size: 16px
   }
 
-  .item__descr,
-  .item__title,
-  .progress__item,
-  .specialization__item {
+  .modal-specialist__item-descr,
+  .modal-specialist__item-title,
+  .modal-specialist__progress-item,
+  .modal-specialist__specialization-item {
     font-size: 14px
   }
 
-  .article__link {
+  .modal-specialist__article-link {
     max-width: 320px;
     width: 100%
   }

@@ -1,7 +1,6 @@
 .contacts {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    font-size: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contacts-container {
@@ -56,7 +55,7 @@
     background-color: var(--hover-orange);
 }
 
-.contacts-container .map__block {
+.contacts-container .contacts__map {
     width: 100%;
     overflow: hidden;
     border-radius: 6px

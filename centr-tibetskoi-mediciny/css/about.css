@@ -1,0 +1,21 @@
+.about {
+    padding-top: 90px;
+}
+
+.about__text {
+    position: relative;
+    z-index: auto;
+}
+
+.about__block .about__text {
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 70px;
+    padding: 40px;
+    font-size: 25px;
+    line-height: 50px;
+    max-width: 90%;
+}
+
+.about__block {
+    padding-top: 60px;
+}

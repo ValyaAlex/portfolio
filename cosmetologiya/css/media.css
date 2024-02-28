@@ -133,7 +133,7 @@
         left: 53%;
     }
 
-    .specialist__card {
+    .specialists__card {
         flex-basis: calc(50% - 10px);
     }
 
@@ -141,7 +141,7 @@
         gap: 20px;
     }
 
-    .specialist__info,
+    .specialists__info,
     .specialists__descr {
         padding: 40px;
     }
@@ -184,15 +184,11 @@
         margin-bottom: 70px;
     }
 
-    .title {
-        font-size: 30px;
-    }
-
-    .stage__text-right {
+    .consultation__stage-right {
         right: 5%;
     }
 
-    .stage__text-left {
+    .consultation__stage-left {
         left: 15%;
     }
 
@@ -200,16 +196,16 @@
         width: calc((100% / 3) - 20px);
     }
 
-    .specialist__card {
+    .specialists__card {
         flex-basis: 100%;
         min-height: 350px;
     }
 
-    .specialist__name {
+    .specialists__name {
         max-width: 100%;
     }
 
-    .specialist__info {
+    .specialists__info {
         padding-bottom: 20px;
     }
 
@@ -249,16 +245,10 @@
     .title,
     .info-title {
         font-size: 20px;
-        margin-bottom: 40px;
     }
 
     .about__text:last-child {
         margin-bottom: 50px;
-    }
-
-    .consultation {
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
 
     .consultation__stages,
@@ -333,7 +323,7 @@
     }
 
     .hero__title {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .hero__btn {
@@ -343,6 +333,10 @@
     .list__item {
         padding: 20px;
         margin-bottom: 0;
+    }
+
+    .consultation {
+        padding-top: 60px;
     }
 
     .consultation__stage:not(:last-of-type)::before {
@@ -359,19 +353,19 @@
         gap: 20px;
     }
 
-    .stage__text-left {
+    .consultation__stage-left {
         left: 10%;
     }
 
-    .stage__text-right {
+    .consultation__stage-right {
         right: 0%;
     }
 
-    .stage__text {
+    .consultation__stage-text {
         max-width: 40%;
     }
 
-    .specialist__card {
+    .specialists__card {
         background-size: 200px 250px;
     }
 
@@ -391,16 +385,24 @@
     .contacts {
         padding-bottom: 0px;
     }
+
+    .modal-specialist .specialist-1,
+    .modal-specialist .specialist-2,
+    .modal-specialist .specialist-3,
+    .modal-specialist .specialist-4,
+    .modal-specialist .specialist-5 {
+        background-image: none;
+    }
 }
 
 @media (max-width: 630px) {
-    .item__icon {
+    .problems__icon {
         width: 50px;
         height: 50px;
         margin-bottom: 20px;
     }
 
-    .icon__img {
+    .problems__img {
         width: 60px;
         height: 60px;
     }
@@ -412,11 +414,11 @@
 
 @media (max-width: 560px) {
 
-    .icon__logo {
+    .header__logo-big {
         display: none;
     }
 
-    .icon__logo-small {
+    .header__logo-small {
         display: block;
         width: 60px;
         height: 60px;
@@ -450,7 +452,7 @@
         height: 130px;
     }
 
-    .stage__text-left {
+    .consultation__stage-left {
         left: 0%;
     }
 
@@ -464,7 +466,7 @@
         left: 50%;
     }
 
-    .stage__text {
+    .consultation__stage-text {
         line-height: 25px;
     }
 
@@ -501,7 +503,7 @@
         width: 100%;
     }
 
-    .specialist__info, .specialists__descr {
+    .specialists__info, .specialists__descr {
         padding: 10px;
     }
 

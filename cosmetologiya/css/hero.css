@@ -10,11 +10,12 @@
 
 .hero__descr {
     color: var(--white);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .hero__title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .hero__text {

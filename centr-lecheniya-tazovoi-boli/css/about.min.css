@@ -1,11 +1,11 @@
 .about {
-    padding-top: 100px
+    padding-top: 100px;
 }
 
 .about__text {
     font-size: 20px;
     line-height: 35px;
-    margin-bottom: 100px
+    margin-bottom: 60px
 }
 
 .advantages__title {
@@ -20,7 +20,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 20px
+    margin-bottom: 15px
 }
 
 .advantages__list {
@@ -30,7 +30,6 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 100px;
     gap: 20px
 }
 
@@ -45,7 +44,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 40px;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: var(--bg-orange);
     overflow: hidden;
     min-height: 200px;
@@ -56,7 +55,7 @@
     -webkit-clip-path: circle(3% at 11% 20%);
     clip-path: circle(3% at 11% 20%);
     content: '';
-    border-radius: 50px;
+    border-radius: 20px;
     position: absolute;
     top: 0;
     left: 0;

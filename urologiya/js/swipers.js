@@ -1,10 +1,10 @@
 const swiperphoto = new Swiper(".swiper-photo", {
     direction: "horizontal",
     autoplay: true,
+    loop: true,
   
     autoplay: {
-      delay: 5000,
-      loop: true
+      delay: 5000
     },
   
     slideNext: {

@@ -1,6 +1,5 @@
 .consultation {
     padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .consultation__stage {
@@ -22,8 +21,12 @@
     top: 46px;
     left: 51.9%;
     bottom: 0;
-    width: 1px;
+    width: .5px;
     background: #E2E7EC;
+}
+
+.consultation__stage:last-of-type {
+    height: 100px;
 }
 
 .stage-order {
@@ -71,27 +74,27 @@
     height: 180px;
 }
 
-.stage__text.element-animation {
+.consultation__stage-text.element-animation {
     color: #E1E4E7;
 }
 
-.stage__text.element-animation.element-animation.element-show {
+.consultation__stage-text.element-animation.element-animation.element-show {
     color: var(--gray);
     transition: all 1s;
     background: none;
     border: none;
 }
 
-.stage__text {
+.consultation__stage-text {
     position: absolute;
     max-width: 30%;
 }
 
-.stage__text-right {
+.consultation__stage-right {
     right: 12%;
 }
 
-.stage__text-left {
+.consultation__stage-left {
     left: 20%;
 }
 
@@ -100,5 +103,5 @@
 }
 
 .consultation__text {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }

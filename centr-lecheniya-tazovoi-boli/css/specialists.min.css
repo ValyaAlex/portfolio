@@ -1,11 +1,11 @@
-.article__link,
-.item__title {
+.modal-specialist__article-link,
+.modal-specialist__item-title {
     font-weight: 600;
     line-height: 20px
 }
 
 .specialists {
-    margin-bottom: 150px
+    margin-bottom: 60px
 }
 
 .specialists__container {
@@ -13,10 +13,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
-    margin-bottom: 70px
+    margin-bottom: 60px
 }
 
-.specialist__card {
+.specialists__card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -32,16 +32,16 @@
     cursor: pointer
 }
 
-.specialist__info:hover .specialist__name {
+.specialists__info:hover .specialists__name {
     color: var(--orange)
 }
 
-.specialist-banner__training .training__btn:hover,
-.specialist__btn:hover {
+.modal-specialist__training .modal-specialist__training-btn:hover,
+.specialists__btn:hover {
     color: var(--hover-orange)
 }
 
-.specialist__card::before {
+.specialists__card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -55,7 +55,7 @@
     z-index: -2
 }
 
-.specialist__info {
+.specialists__info {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -66,31 +66,31 @@
     padding: 60px
 }
 
-.specialist__name {
+.specialists__name {
     margin-bottom: 15px;
     letter-spacing: .8px;
     max-width: 140px;
     transition: color .3s
 }
 
-.specialist__consultation,
-.specialist__profession {
+.specialists__consultation,
+.specialists__profession {
     font-size: 14px;
     color: #909eaa;
     line-height: 20px;
     max-width: 230px
 }
 
-.specialist__price {
+.specialists__price {
     margin-bottom: 20px
 }
 
-.specialist__btn {
+.specialists__btn {
     color: var(--orange);
     transition: color .3s
 }
 
-.specialist__btn::after {
+.specialists__btn::after {
     display: block;
     content: "";
     height: 1px;
@@ -99,7 +99,7 @@
     transition: width .4s
 }
 
-.specialist__btn:hover::after {
+.specialists__btn:hover::after {
     width: 100%
 }
 
@@ -160,17 +160,16 @@
     max-width: 50%
 }
 
-.call-back__btn {
-    padding: 0px 40px;
+.call-back__btn, .specialists__call-btn {
+    padding: 15px 40px;
     background-color: var(--orange);
     white-space: nowrap;
-    line-height: 45px;
     font-size: 16px;
     border-radius: 6px;
     transition: background-color .3s;
 }
 
-.call-back__btn:hover {
+.call-back__btn:hover, .specialists__call-btn:hover {
     background-color: var(--hover-orange);
 }
 
@@ -203,7 +202,7 @@
     transition: transform .6s
 }
 
-.specialist-banner {
+.modal-specialist__banner{
     padding: 100px 110px 70px 100px;
     background-color: #edf2f5;
     background-position: right 80px bottom;
@@ -225,12 +224,12 @@
     transition: transform .6s
 }
 
-.specialist-banner__name {
+.modal-specialist__name {
     font-size: 30px;
     margin-bottom: 40px
 }
 
-.specialist-banner__profession {
+.modal-specialist__profession {
     font-size: 14px;
     color: #909eaa;
     max-width: 450px;
@@ -241,29 +240,30 @@
     padding: 70px 70px 70px 100px
 }
 
-.banner__title {
+.modal-specialist__banner-title {
     font-size: 25px
 }
 
-.item__title {
+.modal-specialist__item-title {
     margin-bottom: 20px
 }
 
-.item__descr {
+.modal-specialist__item-descr {
     padding-bottom: 40px
 }
 
-.experience__item {
+.list-reset .modal-specialist__experience-item {
     border-left: 1px solid #e1e4e7;
     position: relative;
-    padding-left: 35px
+    padding-left: 35px;
+    margin: 0;
 }
 
-.experience__item:last-child {
+.modal-specialist__experience-item:last-child {
     border: none
 }
 
-.experience__item::before {
+.modal-specialist__experience-item::before {
     content: '';
     display: block;
     width: 20px;
@@ -276,27 +276,28 @@
     top: 0
 }
 
-.progress__item,
-.training__item {
+.list-reset .modal-specialist__progress-item,
+.list-reset .modal-specialist__training-item {
     padding: 20px 0;
-    border-bottom: 1px solid var(--border)
+    border-bottom: 1px solid var(--border);
+    margin: 0;
 }
 
-.specialist-banner__progress,
-.specialist-banner__specialization {
+.modal-specialist__progress,
+.modal-specialist__specialization {
     margin-bottom: 70px
 }
 
-.specialization__item::before {
+.modal-specialist__specialization-item::before {
     content: "—";
     margin-right: 5px
 }
 
-.training__item .item__descr {
+.modal-specialist__training-item .modal-specialist__item-descr {
     padding: 0
 }
 
-.specialist-banner__training ul li:nth-child(1n+4) {
+.modal-specialist__training ul li:nth-child(1n+4) {
     max-height: 0;
     opacity: 0;
     display: none;
@@ -305,7 +306,7 @@
     transition: .5s ease-in
 }
 
-.specialist-banner__training .training__btn {
+.modal-specialist__training .modal-specialist__training-btn {
     position: relative;
     width: 100%;
     padding: 10px;
@@ -324,47 +325,47 @@
     transition: color .2s
 }
 
-.specialist-banner__training #see__more-training,
-.specialist-banner__training #see__more-training-10,
-.specialist-banner__training #see__more-training-10:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training-11,
-.specialist-banner__training #see__more-training-11:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training-2,
-.specialist-banner__training #see__more-training-2:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training-3,
-.specialist-banner__training #see__more-training-3:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training-4,
-.specialist-banner__training #see__more-training-4:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training-5,
-.specialist-banner__training #see__more-training-5:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training-6,
-.specialist-banner__training #see__more-training-6:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training-7,
-.specialist-banner__training #see__more-training-7:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training-8,
-.specialist-banner__training #see__more-training-8:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training-9,
-.specialist-banner__training #see__more-training-9:checked~.training__btn .unloaded,
-.specialist-banner__training #see__more-training:checked~.training__btn .unloaded,
-.specialist-banner__training .training__btn .loaded {
+.modal-specialist__training #see__more-training,
+.modal-specialist__training #see__more-training-10,
+.modal-specialist__training #see__more-training-10:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training-11,
+.modal-specialist__training #see__more-training-11:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training-2,
+.modal-specialist__training #see__more-training-2:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training-3,
+.modal-specialist__training #see__more-training-3:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training-4,
+.modal-specialist__training #see__more-training-4:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training-5,
+.modal-specialist__training #see__more-training-5:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training-6,
+.modal-specialist__training #see__more-training-6:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training-7,
+.modal-specialist__training #see__more-training-7:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training-8,
+.modal-specialist__training #see__more-training-8:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training-9,
+.modal-specialist__training #see__more-training-9:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training #see__more-training:checked~.modal-specialist__training-btn .unloaded,
+.modal-specialist__training .modal-specialist__training-btn .loaded {
     display: none
 }
 
-.training__list {
+.modal-specialist__training-list {
     position: relative
 }
 
-.specialist-banner__training #see__more-training-10~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-11~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-2~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-3~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-4~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-5~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-6~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-7~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-8~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-9~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training~ul li:nth-child(3)::after {
+.modal-specialist__training #see__more-training-10~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-11~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-2~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-3~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-4~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-5~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-6~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-7~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-8~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-9~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training~ul li:nth-child(3)::after {
     content: '';
     display: block;
     position: absolute;
@@ -375,32 +376,32 @@
     background: linear-gradient(to top, #fff, #fff0)
 }
 
-.specialist-banner__training #see__more-training-10:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-11:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-2:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-3:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-4:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-5:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-6:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-7:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-8:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training-9:checked~ul li:nth-child(3)::after,
-.specialist-banner__training #see__more-training:checked~ul li:nth-child(3)::after {
+.modal-specialist__training #see__more-training-10:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-11:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-2:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-3:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-4:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-5:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-6:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-7:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-8:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training-9:checked~ul li:nth-child(3)::after,
+.modal-specialist__training #see__more-training:checked~ul li:nth-child(3)::after {
     content: '';
     background: 0 0
 }
 
-.specialist-banner__training #see__more-training-10:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training-11:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training-2:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training-3:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training-4:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training-5:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training-6:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training-7:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training-8:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training-9:checked~ul li:nth-child(1n+4),
-.specialist-banner__training #see__more-training:checked~ul li:nth-child(1n+4) {
+.modal-specialist__training #see__more-training-10:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training-11:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training-2:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training-3:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training-4:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training-5:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training-6:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training-7:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training-8:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training-9:checked~ul li:nth-child(1n+4),
+.modal-specialist__training #see__more-training:checked~ul li:nth-child(1n+4) {
     max-height: 999px;
     opacity: 1;
     display: block;
@@ -409,21 +410,21 @@
     transition: .5s ease-in
 }
 
-.specialist-banner__training #see__more-training-10:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training-11:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training-2:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training-3:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training-4:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training-5:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training-6:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training-7:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training-8:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training-9:checked~.training__btn .loaded,
-.specialist-banner__training #see__more-training:checked~.training__btn .loaded {
+.modal-specialist__training #see__more-training-10:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training-11:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training-2:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training-3:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training-4:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training-5:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training-6:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training-7:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training-8:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training-9:checked~.modal-specialist__training-btn .loaded,
+.modal-specialist__training #see__more-training:checked~.modal-specialist__training-btn .loaded {
     display: block
 }
 
-.article__link {
+.modal-specialist__article-link {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -434,12 +435,12 @@
     transition: color .3s, border-color .3s
 }
 
-.article__link:hover {
+.modal-specialist__article-link:hover {
     color: var(--orange);
     border-color: var(--orange)
 }
 
-.article__text {
+.modal-specialist__article-text {
     display: block;
     color: #909eaa;
     margin-bottom: 40px;

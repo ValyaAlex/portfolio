@@ -22,21 +22,18 @@
 
 .hero__title {
     display: inline-block;
-    font-weight: 600;
-    font-size: 2.6em;
-    margin-bottom: 0.5em;
+    font-weight: 500;
+    font-size: 33px;
     color: var(--black);
     width: 620px;
     margin-bottom: 20px;
-    line-height: 70px;
+    line-height: 32px
 }
 
 .hero__text {
     width: 600px;
-    font-size: 20px;
-    margin-bottom: 70px;
-    line-height: 35px;
-    color: var(--black);
+    margin-bottom: 60px;
+    color: var(--black)
 }
 
 .hero__btn {

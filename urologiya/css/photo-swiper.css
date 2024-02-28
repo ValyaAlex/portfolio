@@ -1,36 +1,24 @@
 .swiper-title {
-    padding-top: 50px;
+    padding-top: 60px;
     border-top: 1px solid var(--border);
 }
-
-.swiper-title__title {
-    font-size: 30px;
-    margin-bottom: 50px;
-    width: 100%;
-    text-align: center;
-}
-
 
 .swiper-descr {
     width: 100%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .swiper-photo {
     width: 100%;
     height: 700px;
     background-color: var(--bg-blue);
-    margin-bottom: 150px;
+    margin-bottom: 60px;
 }
 
 .swiper-photo>.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-photo .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     display: none;
-}
-
-.photo-img {
-    height: 100%;
 }
 
 .swiper-photo .swiper-slide { 

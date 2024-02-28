@@ -1,0 +1,61 @@
+.photo {
+    margin-bottom: 60px;
+}
+
+.photo-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo-slide-1 {
+    background-image: url(../img/photo-slide1.webp);
+}
+
+.photo-slide-2 {
+    background-image: url(../img/photo-slide2.webp);
+}
+
+.photo-slide-3 {
+    background-image: url(../img/photo-slide3.webp);
+}
+
+.photo-slide-4 {
+    background-image: url(../img/photo-slide4.webp);
+}
+
+.photo-slide-5 {
+    background-image: url(../img/photo-slide5.webp);
+}
+
+.photo-slide-6 {
+    background-image: url(../img/photo-slide6.webp);
+}
+
+.photo-slide-7 {
+    background-image: url(../img/photo-slide7.webp);
+}
+
+.swiper-photo>.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-photo .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    display: none;
+}
+
+.swiper-photo .swiper-slide { 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top 35%;
+    height: 500px;
+}
+
+.swiper-photo {
+    height: 500px;
+    background-color: var(--bg-blue);
+    width: 70%;
+    border-radius: 20px;
+}
+
+.photo .video__title, .photo__title {
+    padding-left: 0;
+}
