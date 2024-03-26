@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High pass</title>
+    <link rel="preload" href="/fonts/Roboto-Bold.woff2" as="font">
+    <link rel="preload" href="/fonts/Roboto-Regular.woff2" as="font">
+    <link rel="preload" href="/fonts/TTFirsNeue-Bold.woff2" as="font">
+    <link rel="preload" href="/fonts/TTFirsNeue-Medium.woff2" as="font">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="icon" href="/img/icon/favicon.png" type="image/x-icon">
+
+    <script defer src="/js/maps.js"></script>
+    <script defer src="/js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="" class="header__logo">
+                <img class="header__icon" loading="lazy" alt="High pass" src="img/icon/Logo.png">
+            </a>
+            <div class="header__nav">
+                <button aria-label="Открыть меню" class="btn-reset burger">
+                    <span class="burger__line">
+                    </span>
+                    <span class="burger__line">
+                    </span>
+                    <span class="burger__line">
+                    </span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list list-reset">
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">О&nbsp;студии</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#symptoms" class="nav__link">Наши&nbsp;проекты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#diagnoses" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item nav-4">
+                            <a href="#disease" class="nav__link ">Мастер-классы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#disease" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <form action="#" class="header__form ">
+                <input type="search" class="header__input hidden" placeholder="Что будем искать?">
+                <button class="btn-reset header__btn">
+                    <img src="/img/icon/loupe.png" alt="Иконка лупа" loading="lazy" class="header__btn-icon loupe">
+                    <img src="/img/icon/search-close.png" alt="Закрыть поиск" loading="lazy"
+                        class="header__btn-icon closed-search hidden">
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__grid">
+                    <div class="hero__item hero-1">
+                        <div class="hero__text">
+                            <p class="hero__descr">
+                                Мастер-класс от Игоря Робова
+                            </p>
+                            <h1 class="hero__name">
+                                Неоновый фотосет 2.0 7 июля 20:00
+                            </h1>
+                            <button class="btn-reset hero__btn">
+                                Узнать больше
+                            </button>
+                        </div>
+                        <p class="hero__hash">
+                            #мастеркласс
+                        </p>
+                    </div>
+                    <div class="hero__item hero-2">
+                        <p class="hero__descr">
+                            Работы участников предыдущего мастер-класса
+                        </p>
+                        <div class="hero-2__img"></div>
+                    </div>
+                    <div class="hero__item hero-3">
+                    </div>
+                    <div class="hero__item hero-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 class="title about__title">
+                    О студии
+                </h2>
+                <div class="about__grid">
+                    <p class="about__text">
+                        В&nbsp;рамках спецификации современных стандартов, интерактивные прототипы, инициированные
+                        исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы
+                        неутешительны: высокотехнологичная концепция общественного уклада требует от&nbsp;нас анализа
+                        соответствующих условий активизации! Следует отметить, что семантический разбор внешних
+                        противодействий фиксирует необходимость распределения внутренних резервов и&nbsp;ресурсов.
+                        Безусловно, граница обучения кадров предоставляет широкие возможности для первоочередных
+                        требований.
+                        Повседневная практика показывает, что глубокий уровень погружения предполагает независимые
+                        способы
+                        реализации новых принципов формирования материально-технической и&nbsp;кадровой базы. Приятно,
+                        граждане, наблюдать, как явные признаки институционализации являются только методом
+                        политического
+                        участия и&nbsp;нарушающими общечеловеческие нормы этики.
+                    </p>
+                    <picture>
+                        <source srcset="img/about-img-320.webp" media="(max-width: 760px)">
+                        <source srcset="img/about-img-768.webp" media="(max-width: 980px)">
+                        <source srcset="img/about-img-1024.webp" media="(max-width: 1180px)">
+                        <img src="/img/about-img-1920.webp" alt="Фото" class="about__img">
+                    </picture>
+                    <form action="#" class="about__form">
+                        <label for="input" class="about__label">Подписаться на рассылку</label>
+                        <input type="email" name="mail" id="input" class="about__input" placeholder="Email">
+                        <button class="btn-reset about__btn">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="project">
+            <div class="container">
+                <h2 class="title project__title">
+                    Наши проекты
+                </h2>
+                <div class="project__grid">
+                    <div class="project__item item-1">
+                        <div class="project-1"></div>
+                        <p class="hash">
+                            #пейзаж
+                        </p>
+                        <p class="project__content">
+                            Синтетически, смешаны с не уникальными <span class="dn">данными до степени…</span> <span class="db">...</span>
+                        </p>
+                        <time datetime="2024-06-16T12:00:00Z" class="project__date">16 июня</time>
+                    </div>
+                    <div class="project__item item-2">
+                        <div class="project-2"></div>
+
+                        <p class="hash">
+                            #портрет
+                        </p>
+                        <p class="project__content">
+                            В своём стремлении улучшить опыт мы <span class="dn">упускаем, что явные...</span> <span class="db">...</span>
+                        </p>
+                        <time datetime="2024-05-28T12:00:00Z" class="project__date">28 мая</time>
+                    </div>
+                    <div class="project__item item-3">
+                        <div class="project-3"></div>
+                        <p class="hash">
+                            #предмет
+                        </p>
+                        <p class="project__content">
+                            Равным образом, высокое качество позиционных <span class="db">высокотехнологичная концепция общественного уклада</span> <span class="dn">...</span>
+                        </p>
+                        <time datetime="2024-05-14T12:00:00Z" class="project__date">14 мая</time>
+                    </div>
+                    <div class="project__item item-4">
+                        <div class="project-4"></div>
+                        <p class="hash">
+                            #fuji
+                        </p>
+                        <div class="project__text">
+                            <div class="project__info">
+                                <time datetime="2024-04-09T12:00:00Z" class="project__date">9 апреля</time>
+                                <h3 class="project__title title mb">
+                                    Семантический разбор
+                                </h3>
+                                <p class="project__content">
+                                    В рамках спецификации современных стандартов, интерактивные прототипы
+                                </p>
+                            </div>
+                            <button class="btn-reset project__btn">
+                            О проекте
+                        </button>
+                        </div>
+                        
+                    </div>
+                    <div class="project__item item-5">
+                        <div class="project-5"></div>
+                        <p class="hash">
+                            #проектзабвение
+                        </p>
+                        <div class="project__text">
+                            <div class="project__info">
+                                <time datetime="2024-03-20T12:00:00Z" class="project__date">20 марта</time>
+                                <h3 class="project__title title mb">
+                                    Забвение
+                                </h3>
+                                <p class="project__content">
+                                    Играет важную роль в формировании глубокомысленных рассуждений
+                                </p>
+                            </div>
+                            <button class="btn-reset project__btn">
+                                О проекте
+                            </button>
+                        </div>
+                        
+                    </div>
+
+                    <div class="project__item item-6">
+                        <div class="project-6"></div>
+                        <p class="hash">
+                            #портрет
+                        </p>
+                        <p class="project__content">
+                            С учётом сложившейся международной обстановки, новая модель организационной…
+                        </p>
+                        <time datetime="2024-03-09T12:00:00Z" class="project__date">1 марта</time>
+                    </div>
+                    <div class="project__item item-7">
+                        <div class="project-7"></div>
+                        <p class="hash">
+                            #ретушь
+                        </p>
+                        <p class="project__content">
+                              Как принято считать, многие известные личности и по сей день остаются уделом либералов…
+                        </p>
+                        <time datetime="2024-03-01T12:00:00Z" class="project__date">9 марта</time>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="contacts">
+            <div class="container contacts-container">
+                <h2 class="title contacts__title">
+                    Контакты
+                </h2>
+                <div class="contacts__grid">
+                    <div class="contacts__item item-map">
+                        <div class="map" id="map">
+                        </div>
+                        <div class="contacts__descr">
+                            <button class="btn-reset contacts__btn-close">
+                                <img src="/img/icon/close.png" loading="lazy" class="contacts__btn-close__img"
+                                    alt="Закрыть">
+                            </button>
+                            <h3 class="contacts__descr-title">
+                                Студия «High pass»
+                            </h3>
+                            <span class="contacts__descr-text">
+                                107045, Москва, Даев переулок, дом 41,&nbsp;бизнес-центр «Даев Плаза»,
+                                этаж&nbsp;;8,&nbsp;офис № 82
+
+                                <a href="tel:8800234‒10‒03" class="contacts__descr-link">+7&nbsp;495&nbsp;424-23-532</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contacts__item">
+                        <form action="#" method="post" class="contacts__form">
+                            <h3 class="contacts__form-title">
+                                Оставить заявку
+                            </h3>
+                            <p class="contacts__text">
+                                Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки
+                                или другого мероприятия
+                            </p>
+                            <input type="text" class="contacts__input" placeholder="Имя">
+                            <input type="email" class="contacts__input" placeholder="Email">
+                            <textarea name="comment" class="comment contacts__input" cols="30" rows="7" placeholder="Комментарий"></textarea>
+                            <button class="btn-reset contacts__form-btn">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__item">
+                    <img src="/img/icon/Logo.png" class="footer__logo" alt="Логотип">
+                    <p class="footer__descr">
+                        Фотостудия High pass® 2018–2020
+                    </p>
+                </div>
+                <div class="grid__item footer-2">
+                    <p class="footer__text">
+                        Которая из моих фотографий самая любимая? Та, которую я собираюсь снять завтра.
+                        ©&nbsp;Имоджен Каннингем
+                    </p>
+                </div>
+                <div class="grid__item item-social">
+                    <p class="footer__social">
+                        Больше интересного:
+                    </p>
+                    <div class="footer__links">
+                        <a href="">
+                            <svg class="footer__icon" width="30" height="30" viewBox="0 0 30 30"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="/img/icon/sprite.svg#ok"></use>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg class="footer__icon" width="30" height="30" viewBox="0 0 30 30"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="/img/icon/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

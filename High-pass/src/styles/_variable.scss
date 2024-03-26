@@ -1,0 +1,29 @@
+
+$orange: #FF6E30;
+$hoverOrange: #BC572B;
+$focusOrange: #FF6E30;
+$activeOrange: #CE4307;
+$titleFont: 'TT Firs Neue';
+$textFont: 'Roboto';
+$gap: 30px;
+$backgroundGray: #202020;
+
+
+@mixin hash {
+    font-family: $textFont;
+    position: absolute;
+    top: 16px;
+    right: 14px;
+    line-height: 16px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: $backgroundGray;
+    padding: 7px 15px;
+}
+
+@mixin bacI {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+

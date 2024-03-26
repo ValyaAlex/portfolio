@@ -1,0 +1,136 @@
+.header {
+    background: $backgroundGray;
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        height: 40px;
+        width: 20%;
+    }
+
+    &__icon {
+        height: 30px;
+        width: 190px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 40px;
+    }
+
+    &__btn {
+        cursor: pointer;
+
+        &-icon {
+            display: block;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &__form {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__input {
+        position: absolute;
+        right: 20px;
+        width: 145px;
+        background: $backgroundGray;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        margin-right: 30px;
+        color: #fff;
+        transition: visibility .3s, opacity .3s;
+
+        &::placeholder {
+            font-family: $titleFont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #fff;
+        }
+    }
+}
+
+.nav {
+    width: 80%;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 70px;
+    }
+
+    &__item {
+        font-family: $titleFont;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__link {
+        -webkit-transition: color .3s;
+        -o-transition: color .3s;
+        transition: color .3s, background-color .3s;
+        color: #ffffff;
+        letter-spacing: .2px;
+
+        &:focus {
+            background-color: $focusOrange;
+            color: #ffffff;
+        }
+
+        &:hover {
+            background: none;
+            color: $hoverOrange;
+        }
+
+        &:active {
+            background: none;
+            color: $activeOrange;
+        }
+    }
+}
+
+.nav-4 {
+    width: 130px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.burger {
+    display: none
+}
+
+.closed-search {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}

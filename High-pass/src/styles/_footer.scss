@@ -1,0 +1,71 @@
+.footer {
+    background-color: $backgroundGray;
+    padding: 25px 30px 15px 30px;
+    color: #ffffff;
+
+    &__logo {
+        width: 190px;
+        height: 33px;
+    }
+
+    &__descr {
+        font-family: $titleFont;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__text {
+        max-width: 360px;
+        line-height: 22px;
+    }
+
+    &__social {
+        margin-bottom: 11px;
+    }
+
+    &__links {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+
+        &>use {
+            fill: #CACACA;
+            transition: fill .3s;
+        }
+
+        &:focus>use {
+            fill: #ffffff;
+        }
+
+        &:hover>use {
+            background: none;
+            fill: $hoverOrange;
+        }
+
+        &:active>use {
+            background: none;
+            fill: $activeOrange;
+        }
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 500px));
+    gap: $gap;
+}
+
+.item-social {
+    display: flex;
+    justify-self: end;
+    align-self: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 19px;
+}

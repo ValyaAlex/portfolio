@@ -27,6 +27,18 @@
 
 @media (max-width:1100px) {
 
+  @media (hover:hover) {
+    .advantages__item:hover::before {
+        clip-path: none;
+    }
+
+    .advantages__item:hover .advantages__item-title__text,
+    .advantages__item:hover .advantages__text {
+        transform: none;
+        opacity: 1;
+    }
+}
+
   .methods,
   .swiper-slide-bg {
     background-size: cover
@@ -849,6 +861,10 @@
     padding: 20px
   }
 
+  .symptoms__title  {
+    line-height: 25px;
+  }
+
   .symptoms-swiper__list {
     padding: 40px 10px 10px 10%
   }
@@ -880,7 +896,6 @@
   }
 
   .modal {
-    height: 100vh;
     top: 0;
     width: 100%
   }
@@ -963,7 +978,7 @@
   }
 
   .page-container {
-    padding: 0px
+    padding: 20px 0
   }
 
   .modal-specialist.modal--visible {

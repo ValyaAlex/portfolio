@@ -1,0 +1,162 @@
+.project {
+    padding-top: 70px;
+    padding-bottom: 55px;
+
+
+    &__grid {
+        max-width: 1290px;
+        display: grid;
+        grid-template-columns: repeat(3, 190px) 2fr 2fr;
+        grid-template-rows: repeat(2, minmax(300px, auto));
+        gap: 25px $gap;
+    }
+
+    &__item {
+        position: relative;
+
+        .hash {
+            @include hash;
+            top: 7px;
+            right: 6px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        position: absolute;
+        padding: 23px 20px 35px 17px;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        color: #ffffff;
+        max-width: 52.5%;
+    }
+
+    &__btn {
+        width: fit-content;
+        color: #ffffff;
+        border: 3px solid $orange;
+        padding: 12px 22px;
+        margin-right: 10px;
+        transition: background-color .3s;
+        cursor: pointer;
+
+        &:focus {
+            background-color: $focusOrange;
+            border: 3px solid rgba(255, 110, 48, 1);
+        }
+
+        &:hover {
+            background: $hoverOrange;
+        }
+
+        &:active {
+            background: $activeOrange;
+        }
+    }
+
+    &__content {
+        margin-bottom: 10px;
+        padding-top: 20px;
+        line-height: 22px;
+    }
+
+    &__date {
+        position: relative;
+        color: rgba(153, 153, 153, 1);
+        font-size: 12px;
+        line-height: 25px;
+        padding-left: 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 1px;
+            display: inline-block;
+            background-image: url(../img/icon/mdi_calendar_today.png);
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-size: 14px 14px;
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    &-1 {
+        background-image: url(../img/project-img1-1920.webp);
+        @include bacI;
+        height: 184px;
+    }
+
+    &-2 {
+        background-image: url(../img/project-img2-1920.webp);
+        @include bacI;
+        height: 184px;
+    }
+
+    &-3 {
+        background-image: url(../img/project-img3-1920.webp);
+        @include bacI;
+        height: 184px;
+    }
+
+    &-4 {
+        background-image: url(../img/project-img4-1920.webp);
+        @include bacI;
+        height: 100%;
+    }
+
+    &-5 {
+        background-image: url(../img/project-img5-1920.webp);
+        @include bacI;
+        height: 100%;
+    }
+
+    &-6 {
+        background-image: url(../img/project-img6-1920.webp);
+        @include bacI;
+        height: 184px;
+    }
+
+    &-7 {
+        background-image: url(../img/project-img7-1920.webp);
+        @include bacI;
+        height: 184px;
+    }
+}
+
+.item-4 {
+    grid-column: 4/6;
+
+    .project__content {
+        padding-top: 0;
+    }
+}
+
+.item-5 {
+    grid-column: 1/4;
+
+    .project__content {
+        padding-top: 0;
+    }
+}
+
+.mb {
+    margin-bottom: 5px;
+}
+
+.dn {
+    display: inline;
+}
+
+.db {
+    display: none;
+}

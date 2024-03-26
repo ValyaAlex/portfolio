@@ -1,0 +1,43 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+*,
+::after,
+::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+button {
+    font-weight: 500;
+    color: var(--white)
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+a {
+    color: inherit;
+    outline-offset: 0;
+    text-decoration: none
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0
+}

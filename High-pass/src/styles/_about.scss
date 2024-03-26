@@ -1,0 +1,83 @@
+.about {
+    padding-top: 32px;
+    padding-bottom: 50px;
+    background-color: $backgroundGray;
+
+    &__title {
+        color: #ffffff;
+        margin-bottom: 8px;
+    }    
+
+    &__text {
+        grid-row: 1 / span 2;
+        font-family: $textFont;
+        font-size: 16px;
+        line-height: 28px;
+        color: rgba(202, 202, 202, 1);
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px $gap;
+    }
+
+    &__label {
+        font-family: $titleFont;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 50px;
+        color: #ffffff;
+    }
+
+    &__img {
+        margin-bottom: 8px;
+    }
+
+    &__form {
+        grid-column: 2 / span 1;
+    }
+
+    &__input {
+        width: 75%;
+        height: 50px;
+        padding-left: 23px;
+        background-color: rgba(74, 74, 74, 1);
+        outline: none;
+        border: none;
+        color: #ffffff;
+        margin-right: 28px;
+        margin-bottom: 20px;
+    
+        &::placeholder {
+            font-size: 16px;
+            line-height: 18px;
+            color: rgba(202, 202, 202, 1);
+        }
+    }
+
+    &__btn {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        background-color: $orange;
+        border: 3px solid $orange;
+        padding: 12px 18px;
+        transition: background-color .3s;
+        cursor: pointer;
+    
+        &:focus {
+            background-color: $focusOrange;
+            border: 3px solid rgba(255, 110, 48, 1);
+        }
+    
+        &:hover {
+            background: $hoverOrange;
+        }
+    
+        &:active {
+            background: $activeOrange;
+        }
+    }
+}

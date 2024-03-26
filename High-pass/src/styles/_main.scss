@@ -1,0 +1,26 @@
+body {
+  min-width: 320px;
+  font-family: $textFont, $titleFont, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-text-size-adjust: none;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: $titleFont;
+}
+
+img {
+  max-height: 100%;
+  width: 100%
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}

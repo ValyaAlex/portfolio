@@ -1,0 +1,179 @@
+.item-map {
+    position: relative;
+    overflow: hidden;
+    top: 5px;
+}
+
+.map {
+    width: 850px;
+    height: 460px;
+    position: relative;
+    z-index: 1;
+}
+
+.contacts {
+    padding-top: 12px;
+    padding-bottom: 67px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 860px auto;
+        gap: 20px;
+    }
+
+    &__descr {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 50px 0 60px;
+        background-color: rgba(32, 32, 32, 0.85);
+        color: #ffffff;
+        z-index: 2;
+        transition: transform .3s;
+
+        &-title {
+            font-family: $titleFont;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 20px;
+            padding-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        &-text {
+            max-width: 90%;
+            line-height: 28px;
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            font-family: $titleFont;
+            font-size: 16px;
+            color: $orange;
+            transition: color .3s, background-color .3s;
+            width: fit-content;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                background-image: url(../img/icon/mdi_call.png);
+                background-repeat: no-repeat;
+                background-size: 22px 22px;
+                width: 22px;
+                height: 22px;
+            }
+
+            &:focus {
+                background-color: $focusOrange;
+                color: #ffffff;
+            }
+
+            &:hover {
+                color: $hoverOrange;
+            }
+
+            &:active {
+                background: none;
+                color: $activeOrange;
+            }
+        }
+    }
+
+    &__btn-close {
+        position: absolute;
+        right: 21px;
+        top: 22px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(153, 153, 153, 1);
+        border-radius: 50%;
+        cursor: pointer;
+
+        &__img {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &__form-title {
+        font-family: $titleFont;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 2px;
+    }
+
+    &__text {
+        margin-bottom: 15px;
+        line-height: 22px;
+        font-size: 16px;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    &__input {
+        outline: none;
+        border: none;
+        background-color: rgba(233, 233, 233, 1);
+        width: 100%;
+        padding: 15px 23px;
+        margin-bottom: 20px;
+
+        &::placeholder {
+            color: rgba(153, 153, 153, 1);
+        }
+    }
+
+    &__form-btn {
+        background-color: $orange;
+        color: #ffffff;
+        border: 3px solid $orange;
+        padding: 12px 20px;
+        width: fit-content;
+        transition: background-color .3s;
+        cursor: pointer;
+
+        &:focus {
+            background-color: $focusOrange;
+            border: 3px solid rgba(255, 110, 48, 1);
+        }
+
+        &:hover {
+            background: $hoverOrange;
+        }
+
+        &:active {
+            background: $activeOrange;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hidden-block {
+    transform: translateX(-420px);
+}
+
+.contacts__title {
+    margin-bottom: 18px;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+.comment {
+    resize: none;
+    margin-bottom: 15px;
+}
