@@ -158,60 +158,6 @@
     width: fit-content
 }
 
-.disease__page-text__item {
-    margin-bottom: 10px
-}
-
-.disease__page-text__list .disease__page-text__item::before {
-    content: "—";
-    margin-right: 10px
-}
-
-.page-container {
-    padding: 70px 30px
-}
-
-.disease__page-title {
-    font-size: 35px;
-    padding: 40px;
-    background-color: var(--bg-blue);
-    border-radius: 10px;
-    margin-bottom: 35px
-}
-
-.disease__page-text {
-    margin-bottom: 15px
-}
-
-.disease__page-text__link {
-    -webkit-transition: color .3s, border-color .3s;
-    -o-transition: color .3s, border-color .3s;
-    transition: color .3s, border-color .3s
-}
-
-.disease__page-text__link:hover {
-    color: var(--hover-orange);
-    border-color: var(--hover-orange)
-}
-
-.page__button {
-    padding-top: 50px
-}
-
-.page__btn {
-    font-size: 16px;
-    background: var(--orange);
-    padding: 20px 40px;
-    border-radius: 6px;
-    -webkit-transition: background-color .3s;
-    -o-transition: background-color .3s;
-    transition: background-color .3s
-}
-
-.page__btn:hover {
-    background-color: var(--hover-orange)
-}
-
 .container-disease #see__more-disease,
 .container-disease .disease__btn-more .loaded,
 .container-disease .disease__btn-more .unloaded {
