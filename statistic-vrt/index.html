@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика ВРТ</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/section-1.css">
+    <link rel="stylesheet" href="./css/section-2.css">
+    <link rel="stylesheet" href="./css/section-3.css">
+    <link rel="stylesheet" href="./css/section-4.css">
+    <link rel="stylesheet" href="./css/section-5.css">
+    <link rel="stylesheet" href="./css/section-6.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <script defer src="./js/d3.v7.min.js"></script>
+    <script defer src="./js/chart.js"></script>
+    <script defer src="./js/chart-2.js"></script>
+    <script defer src="./js/line-animation.js"></script>
+</head>
+
+<body translate="no" class="fullscreen">
+    <main class="main">
+            <div class="main__content well" id="well">
+                <section class="section-1">
+                    <div class="header">
+                        <div class="container">
+                            <a href="https://www.ugmk-clinic.ru/" class="header__logo">
+                                <img src="./img/Logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container parent">
+                        <div class="mask">
+                            <h1 class="section-1__title">
+                                ТЕХНОЛОГИЯ ЭКО
+                            </h1>
+                        </div>
+                        <div class="section-1__content">
+                            <div class="section-1__left"></div>
+                            <div class="section-1__right">
+                                <p class="section-1__text">Статистика говорит, что в среднем эффективность
+                                    технологии
+                                    ЭКО
+                                    составляет
+                                    около 30-40%.
+                                </p>
+                                <p class="section-1__text">Но наша практика показывает, что при правильной
+                                    организации
+                                    работы и
+                                    должном
+                                    контроле качества, эффективность значительно выше.
+                                </p>
+                                <p class="section-1__text">В 2023 году в нашем отделении ВРТ средний показатель
+                                    частоты
+                                    наступления
+                                    беременности — <span class="text-decoration">51,01%.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-1__more">
+                            <img src="./img/arrow.svg" alt="Узнать больше" class="section-1__more-img">
+                            <span class="section-1__more-descr">Узнайте больше</span>
+                        </div>
+                    </div>
+                </section>
+                <div class="orange">
+                    <section class="section section-2">
+                        <div class="container">
+                            <div class="section-2__content">
+                                <div class="section-2__left">
+                                    <h2 class="title section-2__title">
+                                        С 2019 года
+                                    </h2>
+                                    <p class="section-2__text">
+                                        Отделение ВРТ в&nbsp;структуре &laquo;УГМК-Здоровье&raquo; функционирует
+                                        и&nbsp;активно развивается с&nbsp;ноября 2019&nbsp;года, выполняя
+                                        программы&nbsp;ЭКО как
+                                        в&nbsp;платном
+                                        режиме, так
+                                        и&nbsp;за&nbsp;счет&nbsp;средств&nbsp;ОМС
+                                    </p>
+                                    <div class="section-2__info">
+                                        <p class="section-2__statistic">
+                                            3,4 раза
+                                        </p>
+                                        <p class="section-2__descr mb">
+                                            общее число циклов ЭКО
+                                        </p>
+                                        <p class="section-2__statistic">
+                                            2,6 раза
+                                        </p>
+                                        <p class="section-2__descr blue">
+                                            циклов ЭКО по ОМС
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-2__right">
+                                    <div class="container-chart" id="container-chart">
+                                        <div class="section-2__ticks">
+                                            <ul class="list-reset section-2__list">
+                                                <li class="section-2__item">
+                                                    2020
+                                                    <div class="gray-line"></div>
+                                                </li>
+                                                <li class="section-2__item">
+                                                    2021
+                                                    <div class="gray-line"></div>
+                                                </li>
+                                                <li class="section-2__item">
+                                                    2022
+                                                    <div class="gray-line"></div>
+                                                </li>
+                                                <li class="section-2__item">
+                                                    2023
+                                                    <div class="gray-line"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="section-2__value">
+                                            <ul class="list-reset section-2__list-value">
+                                                <li class="section-2__item-value">
+                                                    854
+                                                </li>
+                                                <li class="section-2__item-value">
+                                                    426
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section section-3">
+                        <div class="container">
+                            <div class="section-3__content">
+                                <div class="section-3__left">
+                                    <h2 class="title section-3__title">
+                                        Частота наступления беременности
+                                        в&nbsp;программах&nbsp;ЭКО
+                                    </h2>
+                                    <p class="section-3__text">
+                                        Один из ключевых показателей эффективности работы клиники Вспомогательных
+                                        Репродуктивных
+                                        Технологий (ВРТ)
+                                    </p>
+                                    <div class="section-3__info">
+                                        <p class="section-3__statistic">
+                                            34,8–41,7%
+                                        </p>
+                                        <p class="section-3__descr">
+                                            среднее значение по России
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-3__right">
+                                    <p class="section-3__statistic-orange">
+                                        51,01%
+                                    </p>
+                                    <p class="section-3__descr">
+                                        в клинике «УГМК-Здоровье»
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="./img/section3-img-2.webp" alt="" class="section-3__img section-3__img-1">
+                            <img src="./img/section3-img.webp" alt="" class="section-3__img section-3__img-2">
+                        </div>
+
+                    </section>
+
+                    <section class="section section-4">
+                        <div class="section-4__bg"></div>
+                        <div class="container">
+                            <h2 class="title section-4__title">
+                                Эффективность по&nbsp;возрастным&nbsp;группам
+                            </h2>
+                            <p class="section-4__text">
+                                Один из ключевых показателей, определяющих прогноз и успешность
+                                лечения — возраст пациентов
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="section section-5">
+                        <div class="container">
+                            <div class="section-5__content">
+                                <h2 class="title section-5__title">
+                                    Эффективность по&nbsp;возрастным&nbsp;группам
+                                </h2>
+                                <p class="section-5__text">
+                                    С возрастом снижается эффективность процедуры ЭКО
+                                </p>
+                            </div>
+                            <div class="animation-container">
+                                <div class="container__chart">
+                                    <div class="container__chart-2" id="container__chart-2">
+                                    </div>
+                                </div>
+
+                                <div class="gray__line"></div>
+                                <div class="gray__line"></div>
+                                <div class="gray__line"></div>
+                            </div>
+                            <ul class="list-reset section-5__list">
+                                <li class="section-5__item">
+                                    55,9%
+                                    <p class="section-5__descr">
+                                        до 35 лет
+                                    </p>
+                                </li>
+                                <li class="section-5__item">
+                                    51,2%
+                                    <p class="section-5__descr">
+                                        35-39 лет
+                                    </p>
+                                </li>
+                                <li class="section-5__item">
+                                    39,3%
+                                    <p class="section-5__descr">
+                                        после 40 лет
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <svg class="orange__line desktop" width="961" height="5337" viewBox="0 0 961 5337" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 1C1 0.723858 0.776142 0.5 0.5 0.5C0.223858 0.5 0 0.723858 0 1V1113C0 1290.01 143.493 1433.5 320.5 1433.5C496.955 1433.5 640 1576.55 640 1753V5016C640 5193.01 783.493 5336.5 960.5 5336.5V5335.5C784.045 5335.5 641 5192.46 641 5016V1753C641 1575.99 497.507 1432.5 320.5 1432.5C144.045 1432.5 1 1289.45 1 1113V1Z" />
+                    </svg>
+                    <svg class="orange__line mobile" width="235" height="4469" viewBox="0 0 235 4469" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.5 0.5C0.776142 0.5 1 0.723858 1 1V17H0V1C0 0.723858 0.223858 0.5 0.5 0.5Z M1 17V917H0 M1 917C1 961.735 37.2649 998 82 998C127.287 998 164 1034.71 164 1080V1817H163 M164 1817V2717H163 M164 2717V3617H163" />
+                    </svg>
+                </div>
+                <section class="section section-6" translate="no">
+                    <ul class="list-reset section-6__list" id="list">
+                        <li class="section-6__list-item list-item">
+                            <div class="section-6__border-bottom">
+                            </div>
+                            <div class="section-6__border-right">
+                            </div>
+                            <div class="container">
+                                <h2 class="title section-6__title">
+                                    До 35 лет
+                                </h2>
+                                <div class="section-6__flex">
+                                    <div class="section-6__content">
+                                        <p class="section-6__left">
+                                            Эффективность также может отличаться в зависимости от того, «свежий»
+                                            эмбрион
+                                            переносится в
+                                            полость матки, или эмбрион, прошедший криоконсервацию (заморозку).
+                                        </p>
+                                        <p class="section-6__right">
+                                            Все чаще, в своей работе мы выполняем перенос эмбриона после
+                                            криоконсервации.<br>
+                                            Для большинства пациентов такой подход дает возможность правильно
+                                            подготовить
+                                            эндометрий к
+                                            переносу, избежать риска&nbsp;развития синдрома гиперстимуляции
+                                            яичников,
+                                            провести&nbsp;при
+                                            необходимости
+                                            генетический анализ эмбрионов и&nbsp;в&nbsp;конечном итоге позволяет
+                                            получить выше
+                                            эффективность
+                                            процедуры ЭКО.
+                                        </p>
+                                    </div>
+                                    <div class="section-6__charts">
+                                        <div class="section-6__chart">
+                                            <span class="section-6__name left name-1">«Крио»
+                                                перенос</span>
+                                            <div class="section-6__item item-blue item-1">
+                                                <span class="section-6__descr"> 59.6</span>
+                                            </div>
+                                            <div class="section-6__item item-2">
+                                                <span class="section-6__descr"> 54.9</span>
+                                            </div>
+                                            <span class="section-6__name name-2">«Свежий»
+                                                перенос</span>
+                                        </div>
+                                        <div class="section-6__chart">
+                                            <span class="section-6__name left name-3">Без ПГТА</span>
+                                            <div class="section-6__item item-blue item-3">
+                                                <span class="section-6__descr"> 55.1</span>
+                                            </div>
+                                            <div class="section-6__item item-4">
+                                                <span class="section-6__descr"> 55.3</span>
+                                            </div>
+                                            <span class="section-6__name name-4">С ПГТА</span>
+                                        </div>
+                                        <div class="section-6__chart">
+                                            <span class="section-6__name left name-5">Своя
+                                                яйцеклетка</span>
+                                            <div class="section-6__item item-blue item-5">
+                                                <span class="section-6__descr">55.1</span>
+                                            </div>
+                                            <div class="section-6__item item-6">
+                                                <span class="section-6__descr">60.2</span>
+                                            </div>
+                                            <span class="section-6__name name-6">Донорская
+                                                яйцеклетка</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="section-6__list-item list-item-2 section section-7">
+                            <div class="section-6__border-bottom gray-bottom">
+                            </div>
+                            <div class="mask-2">
+
+                            </div>
+                            <div class="section-6__border-bottom">
+                            </div>
+                            <div class="section-6__border-right">
+                            </div>
+                            <div class="container">
+                                <h2 class="title title-2">
+                                    35-39 лет
+                                </h2>
+                                <div class="section-6__flex">
+                                    <div class="section-6__content">
+                                        <p class="section-6__left-2">
+                                            Одним из важных преимуществ современной технологии ЭКО — является
+                                            возможность
+                                            проведение генетического исследования эмбриона (ПГТА)
+                                            до выполнения переноса (подсадки) эмбриона
+                                            в полость матки.
+                                        </p>
+                                        <p class="section-6__right-2">
+                                            Для пациенток старше 35 лет и особенно старше 40 лет, данная технология
+                                            значительно
+                                            снижает количество неудачных попыток переноса эмбриона, вероятность
+                                            прерывания
+                                            беременности, а также риск генетических заболеваний у ребенка.
+                                        </p>
+                                    </div>
+                                    <div class="section-6__charts">
+                                        <div class="section-6__chart">
+                                            <span class="section-6__name left name-1">«Крио»
+                                                перенос</span>
+                                            <div class="section-6__item item-blue item-7">
+                                                <span class="section-6__descr"> 44.8</span>
+                                            </div>
+                                            <div class="section-6__item item-8">
+                                                <span class="section-6__descr"> 53.5</span>
+                                            </div>
+                                            <span class="section-6__name name-2">«Свежий»
+                                                перенос</span>
+                                        </div>
+                                        <div class="section-6__chart">
+                                            <span class="section-6__name left name-3">Без ПГТА</span>
+                                            <div class="section-6__item item-blue item-9">
+                                                <span class="section-6__descr"> 51.8</span>
+                                            </div>
+                                            <div class="section-6__item item-10">
+                                                <span class="section-6__descr"> 54.8</span>
+                                            </div>
+                                            <span class="section-6__name name-4">С ПГТА</span>
+                                        </div>
+                                        <div class="section-6__chart">
+                                            <span class="section-6__name left name-5">Своя
+                                                яйцеклетка</span>
+                                            <div class="section-6__item item-blue item-11">
+                                                <span class="section-6__descr">51.8</span>
+                                            </div>
+                                            <div class="section-6__item item-12">
+                                                <span class="section-6__descr">61.6</span>
+                                            </div>
+                                            <span class="section-6__name name-6">Донорская
+                                                яйцеклетка</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="section-6__list-item list-item-3 section section-8">
+                            <div class="section-6__border-bottom">
+                            </div>
+                            <div class="container">
+                                <h2 class="title title-3">
+                                    Более 40 лет
+                                </h2>
+                                <div class="section-6__flex">
+                                    <div class="section-6__content">
+                                        <p class="section-6__left-3">
+                                            Для пациенток, у которых мы не можем получить собственные яйцеклетки
+                                            высокого
+                                            качества,
+                                            может применяться программа
+                                            с донорской яйцеклеткой.
+                                        </p>
+                                        <p class="section-6__right-3">
+                                            Все доноры «УГМК-Здоровье» проходят тщательный отбор
+                                            и расширенное генетическое обследование.<br>
+                                            Эффективность такой программы практически не зависит
+                                            от возраста пациентов и обеспечивает высокую результативность во всех
+                                            возрастных
+                                            группах.
+                                        </p>
+                                    </div>
+                                    <div class="section-6__charts">
+                                        <div class="section-6__chart">
+                                            <span class="section-6__name left name-1">«Крио»
+                                                перенос</span>
+                                            <div class="section-6__item item-blue item-13">
+                                                <span class="section-6__descr"> 14.3</span>
+                                            </div>
+                                            <div class="section-6__item item-14">
+                                                <span class="section-6__descr"> 41.4</span>
+                                            </div>
+                                            <span class="section-6__name name-2">«Свежий»
+                                                перенос</span>
+                                        </div>
+                                        <div class="section-6__chart">
+                                            <span class="section-6__name left name-3">Без ПГТА</span>
+                                            <div class="section-6__item item-blue item-15">
+                                                <span class="section-6__descr"> 36.1</span>
+                                            </div>
+                                            <div class="section-6__item item-16">
+                                                <span class="section-6__descr"> 54.5</span>
+                                            </div>
+                                            <span class="section-6__name name-4">С ПГТА</span>
+                                        </div>
+                                        <div class="section-6__chart">
+                                            <span class="section-6__name left name-5">Своя
+                                                яйцеклетка</span>
+                                            <div class="section-6__item item-blue item-17">
+                                                <span class="section-6__descr">36.1</span>
+                                            </div>
+                                            <div class="section-6__item item-18">
+                                                <span class="section-6__descr">59.9</span>
+                                            </div>
+                                            <span class="section-6__name name-6">Донорская
+                                                яйцеклетка</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/animation.js"></script>
+
+    <script>
+        // slide 1
+        let heroTitle = document.querySelector('.section-1__title');
+        let heroRight = document.querySelector('.section-1__right');
+        let heroLogo = document.querySelector('.header__logo');
+        let heroLeft = document.querySelector('.section-1__left');
+
+        let tlLoad = gsap.timeline();
+
+        tlLoad.from(heroLogo, { duration: 1, y: -400, opacity: 0, delay: 0.1, ease: "power4.inOut" }, 1)
+            .from(heroTitle, { duration: 2, y: 400, opacity: 0, ease: "power4.inOut" }, "-=1.8")
+            .from(heroRight, { duration: 2, x: 400, opacity: 0, ease: "power4.inOut" }, "-=1.8")
+            .from(heroLeft, { duration: 2, y: 400, opacity: 0, delay: 0.4, ease: "power4.inOut" }, "-=1.8");
+    </script>
+</body>
+
+</html>

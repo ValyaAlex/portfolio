@@ -1,0 +1,58 @@
+.section-3 {
+    position: relative;
+    padding-top: 20vh;
+    padding-bottom: 372px;
+    overflow: hidden;
+}
+
+.section-3__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.section-3__img-1 {
+    z-index: -1;
+    width: 582px;
+    height: 46vh;
+    left: 12%;
+}
+
+.section-3__img-2 {
+    width: 840px;
+    height: 69vh;
+    left: 51%;
+    z-index: 1;
+}
+
+.section-3__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.section-3__left,
+.section-3__right {
+    width: 49%;
+}
+
+.section-3__text {
+    margin-bottom: 95px;
+}
+.section-3__statistic {
+    font-size: 45px;
+    line-height: 52px;
+}
+
+.section-3__descr {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.section-3__statistic-orange {
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 147px;
+    color: var(--orange);
+}
+
