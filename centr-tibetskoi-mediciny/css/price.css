@@ -1,11 +1,14 @@
 .price {
     padding-top: 100px;
     position: relative;
+    overflow: hidden;
 }
 
 .price .bg {
     top: 5%;
-    transform: scale(-1, 1) rotate(0.5turn);
+    left: 0;
+    transform: scale(-1, 1) rotate(40deg);
+    background-size: 100% 100%;
 }
 
 .price .title {
@@ -30,7 +33,7 @@
     position: relative;
     width: calc((100% /2) - 20px);
     cursor: pointer;
-    border-radius: 70px;
+    border-radius: 40px;
     overflow: hidden;
     box-shadow: 0 5px 10px -2px var(--black);
 }
@@ -111,16 +114,16 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 100px 35px 90px 60px;
-    height: 100vh;
+    height: 500px;
     width: 50%;
-    top: 0;
+    top: 10%;
     right: 0;
     border: 1px solid var(--white);
     background-color: var(--white);
     position: absolute;
     overflow: hidden;
     overflow-y: auto;
-    transform: translate(100%, 0 );
+    transform: translate(100%, 0);
     transition: transform .3s, visible .7s, opacity .7s;
 }
 
@@ -151,9 +154,9 @@
 }
 
 .modal-overlay__text {
-    max-width: 90%;  
+    max-width: 90%;
     font-size: 16px;
-    color: var(--gray);   
+    color: var(--gray);
 }
 
 .modal__more {
@@ -191,7 +194,7 @@
 }
 
 .page-text {
-    margin-bottom: 20px;      
+    margin-bottom: 20px;
 }
 
 .page-text__link {
@@ -208,8 +211,8 @@
 }
 
 .page__list .modal__item::before {
-content: "一";
-margin-right: 10px;
+    content: "一";
+    margin-right: 10px;
 }
 
 .page-container .title {
@@ -238,4 +241,15 @@ margin-right: 10px;
 
 .page__link:hover::after {
     width: 100%
+}
+
+.page-btn {
+    background-color: var(--orange);
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color .3s;
+}
+
+.page-btn:hover {
+    background-color: var(--hover-orange);
 }

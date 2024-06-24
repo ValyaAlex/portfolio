@@ -14,7 +14,8 @@
     flex-flow: row nowrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .contacts-info {
@@ -58,7 +59,7 @@
 .contacts-container .contacts__map {
     width: 100%;
     overflow: hidden;
-    border-radius: 6px
+    border-radius: 40px;
 }
 
 .bus-station {
@@ -80,7 +81,7 @@
 }
 
 ymaps ymaps>[class*=balloon__content] {
-    padding: 15px 25px;
+    padding: 15px 35px;
     height: 70px
 }
 
@@ -123,6 +124,15 @@ ymaps ymaps>[class*=balloon__tail]:after {
     filter: grayscale(1);
 }
 
-.ymaps-2-1-79-map ymaps, .ymaps-2-1-79-map ymaps:after, .ymaps-2-1-79-map ymaps:before {
+ymaps .ymaps-2-1-79-balloon__layout {
+width: 270px;
+border-radius: 70px;
+}
+
+ymaps .ymaps-2-1-79-balloon {
     border-radius: 70px;
+}
+
+ymaps .ymaps-2-1-79-balloon__close-button {
+    width: 90px;
 }

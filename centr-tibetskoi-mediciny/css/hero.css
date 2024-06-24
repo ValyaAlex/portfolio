@@ -16,12 +16,12 @@
 
 .hero__title {
     display: inline-block;
-    font-weight: 600;
-    font-size: 2.6em;
+    font-weight: 500;
+    font-size: 33px;
     color: var(--white);
     width: 620px;
     margin-bottom: 20px;
-    line-height: 70px
+    line-height: 50px
 }
 
 .hero__text {
@@ -36,12 +36,10 @@
     display: inline-block;
     position: relative;
     padding: 0 20px;
-    line-height: 48px;
     background: var(--orange);
     border: 1px solid var(--orange);
     border-radius: 6px;
     text-align: center;
-    font-size: 18px;
     -webkit-transition: color .3s, background .3s, border .3s;
     -o-transition: color .3s, background .3s, border .3s;
     transition: color .3s, background .3s, border .3s;

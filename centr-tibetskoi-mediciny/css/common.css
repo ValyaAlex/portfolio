@@ -23,7 +23,7 @@ html {
   --orange: #F4662A;
   --hover-orange: #ED6429;
   --border: #E1E4E7;
-  --tibet: #4d312d;
+  --tibet: #6d3d3d;
 }
 
 a {
@@ -47,11 +47,6 @@ img {
 button {
   font-weight: 500;
   color: var(--white)
-}
-
-section {
-  padding-left: 50px;
-  padding-right: 50px
 }
 
 .title {
@@ -90,7 +85,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1350px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin: 0 auto
 }
 

@@ -2,20 +2,23 @@
     padding-top: 90px;
 }
 
-.about__text {
-    position: relative;
-    z-index: auto;
-}
-
-.about__block .about__text {
-    background-color: rgba(255, 255, 255, .3);
-    border-radius: 70px;
+.about__list {
+     background-color: rgba(255, 255, 255, .3);
+    border-radius: 40px;
     padding: 40px;
-    font-size: 25px;
-    line-height: 50px;
     max-width: 90%;
 }
 
+.about__item::before {
+   content: '—';
+   margin-right: 10px;
+}
+
 .about__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 60px;
+    width: 100%;
+    margin: 0 auto;
 }
