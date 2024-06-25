@@ -107,7 +107,18 @@
                 if (change.isIntersecting) {
                     list.addEventListener("wheel", (evt) => {
                         evt.preventDefault();
-                        list.scrollLeft += evt.deltaY * 9;
+                        if (evt.deltaY < 0) {
+                            list.scrollBy({
+                                left: -innerWidth / 1.5,
+                                behavior: 'smooth'
+                            });
+                        }
+                        if (evt.deltaY > 0) {
+                            list.scrollBy({
+                                left: innerWidth / 1.5,
+                                behavior: 'smooth'
+                            });
+                        }
                         if (list.scrollLeft >= 250) {
                             hold = true
                         } else if (list.scrollLeft === 0) {
